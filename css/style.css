@@ -142,10 +142,10 @@ main{display:grid; grid-template-columns:1frz ; gap:18px; align-items:center }
     .portada {      height: 280px; 
 		/*
 			  background: url('/img/')			  
-		background: url('https://avatars.githubusercontent.com/u/212662790?v=4')*/
+		background: url('https://uploads.onecompiler.io/43sfe2g4e/43uaxht5p/image_1756007342901.png')*/
 			  center/cover;      position: relative;    }
     .foto-perfil {      position: absolute;      bottom: -40px;      left: 24px;      width: 80px;      height: 80px;      border-radius: 50%;   				  border: 4px solid var(--card);      /*background: url('https://i.imgur.com/1X1X1X1.jpg') center/cover;*/    
-				  background: url('https://avatars.githubusercontent.com/u/227050307?v=4') center/cover;    }
+				  background: url('https://uploads.onecompiler.io/43sfe2g4e/43uaxht5p/Screenshot_20250808-025347.png') center/cover;    }
 
   .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 8px 20px rgba(2,6,23,0.6)}
   .muted{color:var(--muted)}
