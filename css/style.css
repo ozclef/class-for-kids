@@ -32,8 +32,14 @@
 		 */	
 	   /* 
 :root.light {	  --bg: #0b0e14; --card:#121621; 			 --muted:#9aa3c2; 			 		   --accent:#4f46e5; 
-		/*			 --accent2:#fbbf24;			 --radius:14px; 			 --bg:#f3f4f6;  			 --card:white;			 --text:#1f2937;			 --muted:#6b7280; 
+		--accent2:#fbbf24;			 --radius:14px; 			 --bg:#f3f4f6;  			 --card:white;			 --text:#1f2937;			 --muted:#6b7280; 
 	}
+			/*
+			:root{				    --bg:#0b0614; --card:#0f1220; --muted:#98a3bf;    --accent:#6d28d9; --accent-2:#fbbf24; --radius:12px;    --container:1100px;  }
+			*{box-sizing:border-box}
+			body{margin:0;font-family:Inter,system-ui,Arial;background:linear-gradient(180deg,#07060a 0%, #0b0614 100%);color:#eef3ff;line-height:1.45}
+			.container{max-width:var(--container);margin:0 auto;padding:20px}
+		*/	
 	   *{box-sizing:border-box;font-family:Inter,system-ui }
 body{margin:10;background:var(--bg);color:var(--text);transition:.25s;	
      font-family:Inter,system-ui,Arial;background:linear-gradient(180deg, #07060a 0%, #0b0614 100%);
@@ -46,11 +52,6 @@ header{  display:flex;justify-content:space-between;  padding:16px;align-items:c
 
 
 
-			/*
-			:root{				    --bg:#0b0614; --card:#0f1220; --muted:#98a3bf;    --accent:#6d28d9; --accent-2:#fbbf24; --radius:12px;    --container:1100px;  }
-			*{box-sizing:border-box}
-			body{margin:0;font-family:Inter,system-ui,Arial;background:linear-gradient(180deg,#07060a 0%, #0b0614 100%);color:#eef3ff;line-height:1.45}
-			.container{max-width:var(--container);margin:0 auto;padding:20px}
 			header{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:18px 0}
 			.brand{display:flex;gap:12px;align-items:center}
   .logo{width:64px;height:64px;border-radius:12px;object-fit:cover;border:2px solid rgba(255,255,255,0.06)}
@@ -75,7 +76,7 @@ header{  display:flex;justify-content:space-between;  padding:16px;align-items:c
   form label{display:block;margin:8px 0;font-size:14px}
   input,textarea{width:100%;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
   footer{padding:18px 0;color:var(--muted);text-align:center;margin-top:18px}
-/*
+
 background: url('https://avatars.githubusercontent.com/u/227050307?v=4') center/cover;    }
 .info {      padding: 60px 24px 24px;    }
 .info h2 {      margin: 0;      font-size: 22px;    }  
