@@ -13,6 +13,9 @@
 </head>
 <body>
   <header style="background: #16a34a(⁰%):blue{100%);"> 
+	  
+  <button class="open-sidebar-btn" onclick="openSidebar()">☰</button>
+    <button class="close-btn" onclick="closeSidebar()">×</button>
 	  <div class="brand">
 			<div style="font-weight:700">
 				<img class="logo" src="https://uploads.onecompiler.io/43sfe2g4e/43uaxht5p/Screenshot_20250808-025347.png" alt="logo org" transform="escale:0.009" width="10px" height="10px"/>
@@ -22,11 +25,9 @@
 		
 	</header>
 	
-  <button class="open-sidebar-btn" onclick="openSidebar()">☰</button>
   <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
-  <nav class="sidebar" id="sidebar">
-    <button class="close-btn" onclick="closeSidebar()">×</button>
     <a href="config.html">⚙️ Configuración</a>
+  <nav class="sidebar" id="sidebar">
     <!---
 	  <a href="index.html">index</a>
     <a href="index2.html">index2</a>
