@@ -10,11 +10,292 @@
 	<link rel="stylesheet" href="css/v2025.css">
   	<div id="particles"></div>
 	-->
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+  <meta charset="utf-8">
+  <title>Web-Prof-4-u</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link rel="stylesheet" href="styles1.css">-->
+  <style>
+    body {
+      background: linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%);
+      min-height: 150%;
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      max-width: 1280px;
+    }
+
+    .navbar {
+      margin: 0;
+      top: 0;
+      font-size: 1.5em;
+    }
+
+    .navbar,
+    .footer {
+      background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(30, 41, 59, 0.18);
+      border-radius: 0 0 14px 14px;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-height: 50px;
+      position: fixed;
+      max-width: 1280px;
+
+      left: 0;
+      right: 0;
+      z-index: 10;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 0;
+      font-size: 0.95em;
+    }
+
+    .container {
+      padding: 80px 16px 60px 16px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .menu-btn,
+    .logout-btn,
+    .open-sidebar-btn {
+      background: linear-gradient(90deg, #f7971e 0%, #ffd200 100%);
+      color: #232323;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.14);
+      padding: 10px 14px;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 4px 4px;
+      font-size: .5em;
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+
+    .menu-btn:hover,
+    .logout-btn:hover,
+    .open-sidebar-btn:hover {
+      background: linear-gradient(90deg, #ffd200 0%, #f7971e 100%);
+      box-shadow: 0 4px 12px rgba(60, 60, 60, 0.22);
+    }
+
+    .menu-btn.active {
+      background: #16a34a;
+    }
+
+    .card {
+      background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(30, 41, 59, 0.26), 0 1.5px 6px rgba(0, 0, 0, 0.15);
+      border: none;
+      margin: 16px 0;
+      padding: 20px 14px;
+      display: flex;
+      max-width: 360px;
+      flex-direction: column;
+      gap: 8px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.04) translateY(-2px);
+      box-shadow: 0 16px 40px rgba(30, 41, 59, 0.32), 0 3px 12px rgba(0, 0, 0, 0.18);
+    }
+
+    .card h3 {
+      margin: 0 0 8px 0;
+      color: #5C6AC4;
+    }
+
+    .card a {
+      color: #3b82f6;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 220px;
+      height: 100vh;
+      background: linear-gradient(135deg, #fff 0%, #c3cfe2 100%);
+      box-shadow: 2px 0 14px rgba(30, 41, 59, 0.14);
+      border-radius: 0 18px 18px 0;
+      padding: 24px 0;
+      z-index: 20;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transform: translateX(-100%);
+      transition: transform 0.5s;
+    }
+
+    .sidebar.active {
+      transform: translateX(0);
+    }
+
+    .sidebar-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.2);
+      z-index: 19;
+      display: none;
+    }
+
+    .sidebar-overlay.active {
+      display: block;
+    }
+
+    .open-sidebar-btn {
+      position: fixed;
+      top: 16px;
+      left: 16px;
+      z-index: 30;
+    }
+
+    .close-btn {
+      background: none;
+      border: none;
+      font-size: 1.6em;
+      cursor: pointer;
+      align-self: flex-end;
+      margin-right: 14px;
+    }
+
+    .layout {
+      display: flex;
+      height: 100vh;
+      max-width: 1350px;
+    }
+
+    .sidebar-left {
+      width: 220px;
+      background: #f3f4f6;
+    }
+
+    .main-content {
+      flex: 1;
+      background: #fff;
+      padding: 16px;
+    }
+
+    .sidebar-right {
+      width: 300px;
+      background: #fafafa;
+      padding: 16px;
+      margin: 10px 15px 20px;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        max-width: 98vw;
+        padding: 80px 2vw 60px 2vw;
+      }
+
+      .sidebar-left,
+      .sidebar-right {
+        display: none;
+      }
+
+      .main-content {
+        width: 100%;
+        padding: 8px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <button class="open-sidebar-btn" onclick="openSidebar()">☰</button>
+  <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+  <nav class="sidebar" id="sidebar">
+    <button class="close-btn" onclick="closeSidebar()">×</button>
+    <a href="index.html">index</a>
+    <a href="index2.html">index2</a>
+    <a href="index3.html">index3</a>
+    <a href="config.html">⚙️ Configuración</a>
+  </nav>
+  <div class="navbar">
+    <span style="font-weight:bold;">Prof</span>
+    <span id="currentTime"></span>
+    <span>
+      <input type="text" id="searchInput" placeholder="Buscar...">
+      <button onclick="searchContent()">Buscar</button>
+    </span>
+    <span>
+      <button class="menu-btn" onclick="window.location='index.html'">Todos</button>
+      <button class="menu-btn" onclick="window.location='Projects.html'">Proyectos</button>
+      <button class="menu-btn" onclick="window.location='alumn.html'">Alumnos</button>
+      <button class="menu-btn" onclick="window.location='config.html'">⚙️ Configuración</button>
+    </span>
+  </div>
+  <header style="background: #16a34a(⁰%):blue{100%);">
+    <h4>WEB FOR STUDENTS</h4>
+    <p>Para mis estudiantes</p>
+  </header>
+  <div class="layout">
+    <aside class="sidebar-left">
+      <ul>
+        <li><a href="">PERFIL PERSONAL</a></li>
+        <li><a href="#">Class</a></li>
+        <li><a href="#">Semana 1: Informatica avanzada, I.A.'s </a></li>
+        <li><a href="#">Semana 2: realidad Virtual Aumentada inmersiva (VR)</a></li>
+        <li><a href="#">Sem 3: STOP MOTION videometraje Profesional</a></li>
+        <li><a href="#">Semn4: Robótica (circuitos avanzados)</a></li>
+        <li><a href="#">Sem 5: SCRATCH (Programación)</a></li>
+      </ul>
+      <iframe src="" style="width:100%; height:80px;"></iframe>
+      <iframe src="https://www.youtube.com/?gl=ES" width="240" height="144"></iframe>
+      <a href="https://www.youtube.com/?gl=ES">Youtube/español</a>
+      <img src="https://uploads.onecompiler.io/43sfe2g4e/43uaxht5p/Screenshot_20250808-004651.png"
+        style="max-height:480px; max-width:480px;">
+      <div class="card">
+        <h3>Herramientas para crear juegos</h3>
+        <ul>
+          <li><a href="https://unity.com/" target="_blank">Unity</a></li>
+          <li><a href="https://www.unrealengine.com/" target="_blank">Unreal Engine 5</a></li>
+          <li><a href="https://scratch.mit.edu/" target="_blank">Scratch</a></li>
+          <li><a href="https://gdevelop.io/" target="_blank">GDevelop</a></li>
+          <li><a href="https://tinkercad.com/" target="_blank">Tinkercad</a></li>
+        </ul>
+        <p>Recuerda: ¡Pregunta a tus padres antes de descargar o instalar cualquier programa!</p>
+      </div>
+      <div class="card">
+        <h2>¡Explora y aprende!</h2>
+        <p>Esta página te ayuda a practicar y moverte por diferentes sitios web. Aquí tienes enlaces a herramientas y
+          juegos educativos que vimos en clase. ¡Diviértete y aprende!</p>
+      </div>
 
+      Solo comparte enlaces legales y seguros.
+      Evita compartir sitios de descargas piratas (como igg-games o Cuevana), ya que pueden tener virus y problemas
+      legales. Mejor enfócate en recursos educativos, oficiales y gratuitos.
 
+      Puedes incluir enlaces a herramientas de desarrollo y juegos educativos:
+
+      Unity
+      Unreal Engine
+      Scratch
+      Tinkercad
+      Steam (solo para explorar juegos gratuitos y legales)
+      GDevelop
+      Lightbot
+      Agrega recomendaciones y advertencias:
+      Explica que deben pedir permiso a sus padres antes de descargar o instalar cualquier cosa y que nunca deben
+      compartir datos personales en sitios desconocidos.
+
+    </aside>
 
   
   <button class="open-sidebar-btn" onclick="openSidebar()">☰</button>
@@ -392,55 +673,7 @@
 					</div>
 							
 
-
-
-		
-		<!----- ASIDE DERECHO MENU ------>
-		</main>
-      <aside>
-
-        <div class="card" style="margin-top:12px">
-          <h4>Contacto rápido</h4>
-          <p class="muted">Formularios sin servidor — enviamos al correo configurado en el servicio</p>
-          <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
-            <label>Nombre<input name="name" required></label>
-            <label>Email<input type="email" name="email" required></label>
-            <label>Mensaje<textarea name="message" rows="3" required></textarea></label>
-            <button class="btn" type="submit" href="https://wa.me/5212461762285?text=Hola%20quiero%20un%20servicio">Enviar</button>
-          </form>
-        </div>
-
-		   <div class="card" style="margin-top:12px">
-			   <div class="auditor-container">
-				   <!-- Filtros -->
-				   <div class="filters">
-					   <div class="filter-group">
-						   <label>Fecha Desde:</label>
-						   <input type="date" id="dateFrom">
-					   </div>
-					   <div class="filter-group">
-						   <label>Fecha Hasta:</label>
-						   <input type="date" id="dateTo">
-					   </div>
-					   <div class="filter-group">
-						   <label>Tipo de Movimiento:</label>
-						   <select id="movementType">
-							   <option value="">Todos</option>
-							   <option value="venta">Ventas</option>
-							   <option value="ajuste">Ajustes</option>
-							   <option value="corte">Cortes</option>
-						   </select>
-					   </div>
-					   <div class="filter-group">
-						   <label>Usuario:</label>
-						   <input type="text" id="userFilter" placeholder="Filtrar por usuario...">
-						   <a  class="btn"  target="_blank"  href="https://wa.me/5212461762285?text=Hola%20quiero%20una%20consulta">  Agendar consulta</a>
-					   </div>
-				   </div>
-			   </div>
-		  </div>
-
-		   <main class="main-content">
+  <main class="main-content">
       <div class="card">
         <h2>ESTE LOBO ES DE ALGUIEN QUE CONOZCO</h2>
         <p>Hecho por ella-ARTE</p>
@@ -588,7 +821,56 @@
         <p>¡Felicitaciones por tu trabajo!</p>
       </div>
 
+		
+		<!----- ASIDE DERECHO MENU ------>
+		</main>
+      <aside>
 
+        <div class="card" style="margin-top:12px">
+          <h4>Contacto rápido</h4>
+          <p class="muted">Formularios sin servidor — enviamos al correo configurado en el servicio</p>
+          <form id="contactForm" method="POST">
+			  <!---
+			  action="https://formspree.io/f/your-form-id" >
+			  ---->
+            <label>Nombre<input name="name" required></label>
+            <label>Email<input type="email" name="email" required></label>
+            <label>Mensaje<textarea name="message" rows="3" required></textarea></label>
+            <button class="btn" type="submit" href="https://wa.me/5212461762285?text=Hola%20quiero%20un%20servicio">Enviar</button>
+          </form>
+        </div>
+
+		   <div class="card" style="margin-top:12px">
+			   <div class="auditor-container">
+				   <!-- Filtros -->
+				   <div class="filters">
+					   <div class="filter-group">
+						   <label>Fecha Desde:</label>
+						   <input type="date" id="dateFrom">
+					   </div>
+					   <div class="filter-group">
+						   <label>Fecha Hasta:</label>
+						   <input type="date" id="dateTo">
+					   </div>
+					   <div class="filter-group">
+						   <label>Tipo de Movimiento:</label>
+						   <select id="movementType">
+							   <option value="">Todos</option>
+							   <option value="venta">Ventas</option>
+							   <option value="ajuste">Ajustes</option>
+							   <option value="corte">Cortes</option>
+						   </select>
+					   </div>
+					   <div class="filter-group">
+						   <label>Usuario:</label>
+						   <input type="text" id="userFilter" placeholder="Filtrar por usuario...">
+						   <a  class="btn"  target="_blank"  href="https://wa.me/5212461762285?text=Hola%20quiero%20una%20consulta">  Agendar consulta</a>
+					   </div>
+				   </div>
+			   </div>
+		  </div>
+
+		 
 	  </aside>
 	</div>
 
@@ -596,7 +878,7 @@
       <div class="muted">©
         <span id="year"></span> 
         <span>
-          <ul>Portal Esotérico · Creado con intención ·         </ul>
+          <ul>    </ul>
           <ul>2025 - 2026</ul>
           <ul>website-by-Oz</ul>       
         </span>
@@ -611,11 +893,48 @@
   </div>
     </footer>
 
+  <script>
+    document.getElementById('loginForm').onsubmit = function (e) {
+      e.preventDefault();
+      const username = document.getElementById('username').value;
+      localStorage.setItem('userId', username);
+      document.getElementById('loginStatus').textContent = 'Sesión iniciada como: ' + username;
+    }
+  </script>
 
-  
-    </aside>
-  </div>
- 
+  <script>
+    // Actualiza la hora
+    function showTime() {
+      document.getElementById('currentTime').textContent = new Date().toLocaleTimeString();
+    }
+    setInterval(showTime, 1000); showTime();
+
+    // Sidebar
+    function openSidebar() {
+      document.getElementById('sidebar').classList.add('active');
+      document.getElementById('sidebarOverlay').classList.add('active');
+    }
+    function closeSidebar() {
+      document.getElementById('sidebar').classList.remove('active');
+      document.getElementById('sidebarOverlay').classList.remove('active');
+    }
+
+    // Buscador básico
+    function searchContent() {
+      var input = document.getElementById('searchInput').value.toLowerCase();
+      var cards = document.querySelectorAll('.card');
+      cards.forEach(function (card) {
+        card.style.display = card.textContent.toLowerCase().includes(input) ? '' : 'none';
+      });
+    }
+  </script>
+</body>
+
+</html>
+</head>
+<body>
+
+
 
 </body>
 
