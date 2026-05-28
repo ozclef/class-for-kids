@@ -11,15 +11,43 @@
 </head>
 <body>
   	<div id="particles"></div>
-		<header>
-			<div class="brand">
+
+
+
+  
+  <button class="open-sidebar-btn" onclick="openSidebar()">☰</button>
+  <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+  <nav class="sidebar" id="sidebar">
+    <button class="close-btn" onclick="closeSidebar()">×</button>
+    <a href="index.html">index</a>
+    <a href="index2.html">index2</a>
+    <a href="index3.html">index3</a>
+    <a href="config.html">⚙️ Configuración</a>
+  </nav>
+  <div class="navbar">
+    <span style="font-weight:bold;">Prof</span>
+    <span id="currentTime"></span>
+    <span>
+      <input type="text" id="searchInput" placeholder="Buscar...">
+      <button onclick="searchContent()">Buscar</button>
+    </span>
+    <span>
+      <button class="menu-btn" onclick="window.location='index.html'">Todos</button>
+      <button class="menu-btn" onclick="window.location='Projects.html'">Proyectos</button>
+      <button class="menu-btn" onclick="window.location='alumn.html'">Alumnos</button>
+      <button class="menu-btn" onclick="window.location='config.html'">⚙️ Configuración</button>
+    </span>
+  </div>
+  <header style="background: #16a34a(⁰%):blue{100%);">
+    <h4>WEB FOR STUDENTS</h4>
+    <p>Para mis estudiantes</p>	
+	
+	  <div class="brand">
 			<div style="font-weight:700">
-				<img class="logo" src="https://github.com/wuana-wuary.png?size=200" alt="logo org" />
+				<img class="logo" src="https://uploads.onecompiler.io/43sfe2g4e/43uaxht5p/Screenshot_20250808-025347.png" alt="logo org" />
 			</div>
 				<a href="/index.html">
-					<h3>
-				Portal - Wuana Wuary - Tlax.
-					</h3>
+					<h3>	Curso de Verano Informatica e Inteligencia artificial	</h3>
 				</a>
 			<div class="muted" style="font-size:13px">Astrología · Tarot · Vibras</div>
 			
@@ -29,12 +57,9 @@
 				<a href="#profile">Profile</a>
 				<a href="#galeria">Galería</a>
 			<a href="#feed">Feed</a>
-			<a  class="btn" href="https://wa.me/5212461762285?text=Hola%20quiero%20una%20consulta">Contacto</a>
+			<a  class="btn" href="https://wa.me/521246XXXXXXX?text=Hola%20quiero%20una%20consulta">Contacto</a>
 		</nav>
 	</header>
-
-  <div class="layout">
-   
    
 	<!------------__LAYYOUT _______-------->
 	<div class="layout">
@@ -43,7 +68,7 @@
 		--->
 			 <aside class="sidebar-left">
       <ul>
-        <li><a href="">PERFIL PERSONAL</a></li>
+        <li><a href="">PERFIL</a></li>
         <li><a href="#">Class</a></li>
         <li><a href="#">Semana 1: Informatica avanzada, I.A.'s </a></li>
         <li><a href="#">Semana 2: realidad Virtual Aumentada inmersiva (VR)</a></li>
@@ -90,7 +115,7 @@
       Explica que deben pedir permiso a sus padres antes de descargar o instalar cualquier cosa y que nunca deben
       compartir datos personales en sitios desconocidos.
 
-				<!--<li><a></a></li>				<li></li>--->
+				<!--<li><a></a></li>			
 				<div><strong>WUANA WUARY -</strong></div>
 			<h3>OFICIAL </h3>
 			<p>Main</p>
@@ -104,8 +129,9 @@
 				<li><a href="#/videos">Videos</a></li>
 				<li><a href="#/settings">Ajustes</a></li>
 			</ul>
-				<br>
 				<a  class="btn" href="https://wa.me/5212461762285?text=Hola%20quiero%20un%20servicio">Contacto</a>
+				 <li></li>--->
+				<br>
 			
 		</aside>
 		
@@ -139,9 +165,9 @@
 					
 				</section>	
 			<section id="profile" class="card">						
-				<h1> Wuana-Wuary </h1>
+				<h1> Kids  </h1>
 				<div class="profile">	
-					<img class="avatar" src="/img/port-marketing.png" alt="avatar">
+					<img class="avatar" src="/">
 				</div>						
 			</section>	
 			<br><br>
@@ -192,7 +218,7 @@
   ▶ Ver rit
 </button>
   </div>
-		
+		<!---
 		<section class="card">
 			<div class="cover-text">
 				<h1>WUANA WUARY</h1>
@@ -212,9 +238,9 @@
 				</div>
 				
 		
-					<!-- GRID -->
+					<!-- GRID ----- >
 					<section class="grid">					
-						<!-- IZQUIERDA -->
+						<!-- IZQUIERDA ------ >
 						<div>
 							<article class="card post">
 								<img		class="post-img"          src="/img/marketing.png"          alt="Dragones esotéricos"        >
@@ -262,9 +288,9 @@
 "Fertilidad"
 						<section>
 				<div id="feed" class="card">
-					----->
+					---- ->
 					<h2 style="margin-top:0">Feed — artículos recientes</h2>
-          <!-- Teaser 1 ----->
+          <!-- Teaser 1 ------- ->
 					<article class="feed-item">
 						<img class="thumb" src="/1757819056786.jpg" alt="colores">
 						<div class="teaser">
@@ -276,7 +302,7 @@
 						</div>
 					</article>
 					
-					<!-- Teaser 2 ------->
+					<!-- Teaser 2 ------ ->
 					<article class="feed-item">
 						<img class="thumb" src="/1757819064823.jpg" alt="tarot">
 						<div class="teaser">
@@ -288,7 +314,7 @@
 						</div>
 					</article>
 
-          <!-- Teaser 3 ------->
+          <!-- Teaser 3 ------ ->
 					<article class="feed-item">
 						<img class="thumb" src="/1757819067254.jpg" alt="astrologia">
             <div class="teaser">
@@ -363,12 +389,12 @@
 						</div>
 					</div>
 							
-				
-		</main>
+
 
 
 		
 		<!----- ASIDE DERECHO MENU ------>
+		</main>
       <aside>
 
         <div class="card" style="margin-top:12px">
@@ -584,36 +610,6 @@
     </footer>
 
 
-
-
-  
-  <button class="open-sidebar-btn" onclick="openSidebar()">☰</button>
-  <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
-  <nav class="sidebar" id="sidebar">
-    <button class="close-btn" onclick="closeSidebar()">×</button>
-    <a href="index.html">index</a>
-    <a href="index2.html">index2</a>
-    <a href="index3.html">index3</a>
-    <a href="config.html">⚙️ Configuración</a>
-  </nav>
-  <div class="navbar">
-    <span style="font-weight:bold;">Prof</span>
-    <span id="currentTime"></span>
-    <span>
-      <input type="text" id="searchInput" placeholder="Buscar...">
-      <button onclick="searchContent()">Buscar</button>
-    </span>
-    <span>
-      <button class="menu-btn" onclick="window.location='index.html'">Todos</button>
-      <button class="menu-btn" onclick="window.location='Projects.html'">Proyectos</button>
-      <button class="menu-btn" onclick="window.location='alumn.html'">Alumnos</button>
-      <button class="menu-btn" onclick="window.location='config.html'">⚙️ Configuración</button>
-    </span>
-  </div>
-  <header style="background: #16a34a(⁰%):blue{100%);">
-    <h4>WEB FOR STUDENTS</h4>
-    <p>Para mis estudiantes</p>
-  </header>
   
     </aside>
   </div>
