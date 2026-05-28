@@ -1,1 +1,44 @@
-# verano
+# 🖥️ Cursos de Verano 2025 — Computación IA for Kids
+
+**Proyecto académico-docente desarrollado por Oscar Cruz Díaz.**
+
+---
+
+## 📖 Contexto
+Este sitio fue creado en **agosto 2025** con menos de una semana de anticipación, sin petición de la dirección escolar.  
+
+A pesar de las limitaciones (solo un **Xbox One con navegador Edge**, sin apps ni IDEs), se logró desplegar una web funcional en **GitHub Pages** y **Vercel**, mostrando la capacidad de improvisación y enseñanza en tiempo real.
+
+---
+
+## 🚀 Tecnologías utilizadas
+- **HTML5** básico y semántico
+- **CSS3** simple (sin SCSS en esta versión)
+- **JavaScript** mínimo (solo dinámicas básicas)
+- **GitHub Pages** para hosting inicial
+- **Vercel** para despliegue rápido
+
+---
+
+## 📂 Estructura del proyecto
+- `/index.html` → Página principal con información del curso.
+- `/css/style.css` → Estilos básicos.
+- `/profe/` → Página de presentación docente.
+
+---
+
+## ✨ Aprendizajes clave
+- Cómo desplegar una web completa en menos de una semana.
+- Uso de **repos públicos en GitHub** para visibilidad.
+- Primer contacto con **Vercel** como plataforma de producción real.
+- Inicio de prácticas con **Supabase** para backend y RLS (aprendido posteriormente).
+
+---
+
+## 📸 Preview
+[Visita la página aquí](https://ozclef.github.io/cursos-verano-computacion-for-kids/profe/)
+
+---
+
+## 📜 Licencia
+MIT © 2025 Oscar Cruz Díaz
