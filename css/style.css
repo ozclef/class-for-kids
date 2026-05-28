@@ -1,4 +1,7 @@
       /*
+/*	    --bg:#0b0614; --card:#0f1220; --muted:#98a3bf;    --accent:#6d28d9; --accent-2:#fbbf24; --radius:12px;    --container:1100px;  }
+			*{box-sizing:border-box}
+			body{margin:0;font-family:Inter,system-ui,Arial;background:linear-gradient(180deg,#07060a 0%, #0b0614 100%);color:#eef3ff;line-height:1.45}
 */
 	
 
@@ -18,7 +21,6 @@ color: #eaf7f0;    }
       background: url('') center/cover;
       position: relative;
     }
-		/*
     .foto-perfil {
       position: absolute;
       bottom: -40px;
@@ -29,18 +31,15 @@ color: #eaf7f0;    }
       border: 4px solid var(--card);
 	ackground: url('https://i.imgur.com/1X1X1X1.jpg') center/cover;
 
-
-:root{	   --bg:#0b0614;	   --card:#0f1220; 	   --muted:#98a3bf; 	   --accent:#6d28d9;	   }	   
+		/*
+   --bg:#0b0614;	   --card:#0f1220; 	   --muted:#98a3bf; 	   --accent:#6d28d9;	   }	   
 	   --accent-2:#fbbf24;	   --radius:12px; 		 --container:1100px;	   --text:#eef3ff;			   :root { }
 		 */	
 	   /* 
 :root.light {	  --bg: #0b0e14; --card:#121621; 			 --muted:#9aa3c2; 			 		   --accent:#4f46e5; 
 		--accent2:#fbbf24;			 --radius:14px; 			 --bg:#f3f4f6;  			 --card:white;			 --text:#1f2937;			 --muted:#6b7280; 
 	}
-			/*
-			:root{				    --bg:#0b0614; --card:#0f1220; --muted:#98a3bf;    --accent:#6d28d9; --accent-2:#fbbf24; --radius:12px;    --container:1100px;  }
-			*{box-sizing:border-box}
-			body{margin:0;font-family:Inter,system-ui,Arial;background:linear-gradient(180deg,#07060a 0%, #0b0614 100%);color:#eef3ff;line-height:1.45}
+			
 			.container{max-width:var(--container);margin:0 auto;padding:20px}
 	   *{box-sizing:border-box;font-family:Inter,system-ui }
 body{margin:10;background:var(--bg);color:var(--text);transition:.25s;	
