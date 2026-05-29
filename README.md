@@ -2,6 +2,11 @@
 
 **Proyecto académico-docente desarrollado por Oscar Cruz Díaz.**
 
+
+
+<img width="1257" height="742" alt="image" src="https://github.com/user-attachments/assets/b0a60a6c-dacf-44a5-9a1f-cb89520428d4" />
+
+
 ---
 
 ## 📖 Contexto
