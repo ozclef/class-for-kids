@@ -1,0 +1,60 @@
+
+	<!----- ASIDE DERECHO MENU    <aside>------>
+   
+    <aside><!-- class="sidebar-right">--->
+
+      <!-- Puedes agregar esto en tu archivo HTML donde quieras mostrar el login ----- >
+      <div class="card">
+        <h3>Iniciar sesión</h3>
+        <!----<form id="loginForm">----- >
+			<form>
+          <input type="text" id="username" placeholder="Nombre de usuario" required>
+          <button type="submit">Entrar</button>
+        </form>
+        <!---<p id="loginStatus"></p>----- >
+      </div>
+   
+
+        <div class="card" style="margin-top:12px">
+          <h4>Contacto rápido</h4>
+          <p class="muted">Formularios sin servidor — enviamos al correo configurado en el servicio</p>
+          <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+            <label>Nombre<input name="name" required></label>
+            <label>Email<input type="email" name="email" required></label>
+            <label>Mensaje<textarea name="message" rows="3" required></textarea></label>
+            <button class="btn" type="submit" href="https://wa.me/5212461762285?text=Hola%20quiero%20un%20servicio">Enviar</button>
+          </form>
+        </div>
+
+
+		   <div class="card" style="margin-top:12px">
+			   <div class="auditor-container">
+				   <!-- Filtros -->
+				   <div class="filters">
+					   <div class="filter-group">
+						   <label>Fecha Desde:</label>
+						   <input type="date" id="dateFrom">
+					   </div>
+					   <div class="filter-group">
+						   <label>Fecha Hasta:</label>
+						   <input type="date" id="dateTo">
+					   </div>
+					   <div class="filter-group">
+						   <label>Tipo de Movimiento:</label>
+						   <select id="movementType">
+							   <option value="">Todos</option>
+							   <option value="venta">Ventas</option>
+							   <option value="ajuste">Ajustes</option>
+							   <option value="corte">Cortes</option>
+						   </select>
+					   </div>
+					   <div class="filter-group">
+						   <label>Usuario:</label>
+						   <input type="text" id="userFilter" placeholder="Filtrar por usuario...">
+						   <a  class="btn"  target="_blank"  href="https://wa.me/5212461762285?text=Hola%20quiero%20una%20consulta">  Agendar consulta</a>
+					   </div>
+				   </div>
+			   </div>
+		  </div>
+
+	     <div class="card"> 
