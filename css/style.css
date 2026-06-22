@@ -5,7 +5,7 @@
 */
 	
 
-    :root {      --bg:  linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%); ;      --card: #16181c;      --accent: #6ce6b6;      --muted: #9aa0a6;    }
+    :root {      --bg:  linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%); ;      --card: linear-gradient(90deg, #ffd200 0%, #f7971e 100%);      --accent: #6ce6b6;      --muted: #9aa0a6;    }
     body {      margin: 0;      font-family: 'Segoe UI', sans-serif;   
 		  /*background: var(--bg);    */
 background: linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%);  
