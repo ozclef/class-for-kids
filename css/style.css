@@ -172,8 +172,8 @@ header ,   .navbar {      margin: 0;      top: 0;      font-size: 1.5em;    }
 		color: #fff;      box-shadow: 0 2px 8px rgba(30, 41, 59, 0.18);    
 		border-radius: 0 0 14px 14px;      padding: 12px 24px;      display: flex;   
 		align-items: center;      justify-content: space-between;      max-height: 50px;  
-		position: fixed;      max-width: 1280px;      left: 0;      right: 0;      z-index: 10;    }    
-footer, .footer {      background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+		position: fixed;      max-width: 99vh;      left: 0;      right: 0;      z-index: 10;    }    
+footer/*, .footer */{      background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
 		color: #fff;      box-shadow: 0 2px 8px rgba(30, 41, 59, 0.18);    
 		border-radius: 0 0 14px 14px;      padding: 12px 24px;     }
 	/*position: fixed;  
