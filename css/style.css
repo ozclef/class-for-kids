@@ -168,13 +168,17 @@ footer{padding:18px 0;color:var(--muted);text-align:center;margin-top:18px}
    
 header ,   .navbar {      margin: 0;      top: 0;      font-size: 1.5em;    }    
 
-.navbar,    footer {      background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+.navbar/*,    footer*/ {      background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
 		color: #fff;      box-shadow: 0 2px 8px rgba(30, 41, 59, 0.18);    
 		border-radius: 0 0 14px 14px;      padding: 12px 24px;      display: flex;   
 		align-items: center;      justify-content: space-between;      max-height: 50px;  
 		position: fixed;      max-width: 1280px;      left: 0;      right: 0;      z-index: 10;    }    
-footer, .footer {      position: fixed;      bottom: 0;      font-size: 0.95em;    }
-		
+footer, .footer {      background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+		color: #fff;      box-shadow: 0 2px 8px rgba(30, 41, 59, 0.18);    
+		border-radius: 0 0 14px 14px;      padding: 12px 24px;     }
+	/*position: fixed;  
+				 bottom: 0;      font-size: 0.95em;    }
+		*/
    main ,  .container {      padding: 80px 16px 60px 16px;      max-width: 720px;      margin: 0 auto;    }
     .menu-btn,    .logout-btn,    .open-sidebar-btn {      background: linear-gradient(90deg, #f7971e 0%, #ffd200 100%);
       color: #232323;      border: none;      border-radius: 8px;      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.14);      padding: 10px 14px;      font-weight: bold;      cursor: pointer;      margin: 4px 4px;      font-size: .5em;      transition: background 0.2s, box-shadow 0.2s;    }
