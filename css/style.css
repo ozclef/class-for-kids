@@ -13,7 +13,7 @@ color: #eaf7f0;    }
     header {      position: fixed;      top: 0;      left: 0;      right: 0;      background: var(--card);      padding: 12px 24px;      display: flex;      justify-content: space-between;      align-items: center;      z-index: 1000;    }
     header h1 {      margin: 0;      font-size: 18px;      color: var(--accent);    }
     nav a {      margin-left: 16px;      color: var(--muted);      text-decoration: none;      font-weight: 500;    }
-    .layout {      display: grid;      grid-template-columns: 320px 1fr 320px;      gap: 18px;      padding: 100px 24px 24px;    }
+    .layout {      display: grid;      grid-template-columns: 260px 1fr 220px;      gap: 18px;      padding: 100px 24px 24px;    }
     aside {      background: var(--card);      padding: 12px;      border-radius: 8px;    }
     .perfil {      background: var(--card);      border-radius: 12px;      overflow: hidden;    }
     .portada {
@@ -47,6 +47,8 @@ body{margin:10;background:var(--bg);color:var(--text);transition:.25s;
      font-family:Inter,system-ui,Arial;background:linear-gradient(180deg, #07060a 0%, #0b0614 100%);
      color:#eef3ff;line-height:1.45}
 		*/
+
+/*
 nav a, a{  margin-left:12px;text-decoration:none;color:var(--muted); 
          text-decoration:none;margin-left:12px;font-size:15px}
 
@@ -82,6 +84,8 @@ header{  display:flex;justify-content:space-between;  padding:16px;align-items:c
 /*
 background: url('https://avatars.githubusercontent.com/u/227050307?v=4') center/cover;    }*/
 
+/*
+//////////////////////////////////////////////////////////////////////
 .info {      padding: 60px 24px 24px;    }
 .info h2 {      margin: 0;      font-size: 22px;    }  
 .info p {      margin: 6px 0;         color: var(--muted);    }
@@ -152,14 +156,8 @@ footer{padding:18px 0;color:var(--muted);text-align:center;margin-top:18px}
       a {  color:white;      } 
 		*/
 
-
-
-
-
 /*
-		<style>
 		/*
-		*/
     body {      background: linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%);
 		min-height: 99vh;      font-family: Arial, sans-serif;   
 		margin: 30px;      max-width: 100vh    }
@@ -254,9 +252,10 @@ footer, .footer {      position: fixed;      bottom: 0;      font-size: 0.95em; 
       margin: 10px 15px 20px;
     }
     @media (max-width: 900px) {
-/* 
+/*
 	  @media(max-width:980px){
-			*/  
+/////////////////////////////////////////////////
+			
     main{grid-template-columns:1fr} 
     .gallery img{height:184px} 
 
@@ -289,3 +288,5 @@ footer, .footer {      position: fixed;      bottom: 0;      font-size: 0.95em; 
     }
 		}
 		#particles{  position:fixed;  inset:0;  z-index:-1;   }
+
+	  */
