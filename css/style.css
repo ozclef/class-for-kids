@@ -10,7 +10,13 @@
 		  /*background: var(--bg);    */
 background: linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%);  
 color: #eaf7f0;    }
-    header {      position: fixed;      top: 0;      left: 0;      right: 0;      background: var(--card);      padding: 12px 24px;      display: flex;      justify-content: space-between;      align-items: center;      z-index: 1000;    }
+    header {
+		  background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+		color: #fff;      box-shadow: 0 2px 8px rgba(30, 41, 59, 0.18);    
+		border-radius: 0 0 14px 14px;      padding: 12px 24px;  
+	}
+/*position: fixed;      top: 0;      left: 0;      right: 0;      background: var(--card);      padding: 12px 24px;      display: flex;      justify-content: space-between;      align-items: center;      z-index: 1000;    }
+*/
     header h1 {      margin: 0;      font-size: 18px;      color: var(--accent);    }
     nav a {      margin-left: 16px;      color: var(--muted);      text-decoration: none;      font-weight: 500;    }
     .layout {      display: grid;      grid-template-columns: 260px 1fr 220px;      gap: 18px;      padding: 100px 24px 24px;    }
