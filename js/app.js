@@ -9,10 +9,6 @@ async function loadJSON(path){
   return res.json();
 }
 */
-async function render(){
-  const hash = location.hash || "#/feed";
-  const [_, route] = hash.split("/");
-
 ////  const profile = await loadJSON("data/profile.json");
 const profile = await loadJSON("data/profile.json") || {
     theme:"dark",
@@ -40,6 +36,10 @@ async function loadJSON(path){
 
 	
 //   ////////////
+async function render(){
+  const hash = location.hash || "#/feed";
+  const [_, route] = hash.split("/");
+
 	
 
   document.documentElement.className = profile.theme === "light" ? "light" : "";
