@@ -31,6 +31,23 @@ async function render(){
   </header>
   <div class="container">
   `;
+/*
+
+	 <header style="background: #16a34a(⁰%):blue{100%);"> 
+			<div style="font-weight:700">
+				<img class="logo" 
+					src="https://uploads.onecompiler.io/43sfe2g4e/43uaxht5p/Screenshot_20250808-025347.png"
+					alt="logo org" transform="escale:0.9" width="40px" height="40px"/>
+	  <a href="index.html">WEB KID TECH</a>
+			</div>
+    <!---
+ ---->	
+    <span>
+      <input type="text" id="searchInput" placeholder="Buscar...">
+      <button onclick="searchContent()">Buscar</button>
+    </span>
+		</header>
+	*/
 
   if(route === "feed") html += await viewFeed();
   if(route === "profile") html += viewProfile(profile);	
