@@ -42,13 +42,13 @@ color: #eaf7f0;    }
       height: 120px;
       border-radius: 50%;
       border: 4px solid var(--card);
-	}
-
+background: url('/Screenshot_20250808-004651.png') center/cover;
 		/*
 	background: url('https://i.imgur.com/1X1X1X1.jpg') center/cover;
    --bg:#0b0614;	   --card:#0f1220; 	   --muted:#98a3bf; 	   --accent:#6d28d9;	   }	   
 	   --accent-2:#fbbf24;	   --radius:12px; 		 --container:1100px;	   --text:#eef3ff;			   :root { }
 		 */	
+	}
 	   /* 
 :root.light {	  --bg: #0b0e14; --card:#121621; 			 --muted:#9aa3c2; 			 		   --accent:#4f46e5; 
 		--accent2:#fbbf24;			 --radius:14px; 			 --bg:#f3f4f6;  			 --card:white;			 --text:#1f2937;			 --muted:#6b7280; 
