@@ -93,8 +93,10 @@ header{  display:flex;justify-content:space-between;  padding:16px;align-items:c
   .cover-text p{margin:8px 0;color:var(--muted)}
   .avatar{width:110px;height:110px;border-radius:14px;object-fit:cover;border:3px solid rgba(255,255,255,0.06)}
   main{display:grid;grid-template-columns:2fr 360px;gap:18px}
+*/
   .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 8px 20px rgba(2,6,23,0.6)}
-  .muted{color:var(--muted)}
+/*  
+.muted{color:var(--muted)}
   .feed-item{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.02)}
   .thumb{width:120px;height:80px;object-fit:cover;border-radius:8px;flex-shrink:0}
   .thumb.small{width:80px;height:60px}
@@ -189,13 +191,17 @@ footer{padding:18px 0;color:var(--muted);text-align:center;margin-top:18px}
    
 header ,   .navbar {      margin: 0;      top: 0;      font-size: 1.5em;    }    
 
-.navbar/*,    footer*/
-/* {      background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+.navbar/*,   */ footer
+ {      background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
 		color: #fff;      box-shadow: 0 2px 8px rgba(30, 41, 59, 0.18);    
-		border-radius: 0 0 14px 14px;      padding: 12px 24px;      display: flex;   
-		align-items: center;      justify-content: space-between;      max-height: 50px;  
+		border-radius: 0 0 14px 14px;      padding: 12px 24px;     
+		align-items: center;      justify-content: space-between;   }
+  /*max-height: 50px;  
 		position: fixed;      max-width: 99vh;      left: 0;      right: 0;      z-index: 10;    }    
-footer/*, .footer */{      background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+/*
+footer
+, .footer {      background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+  display: flex;   
 		color: #fff;      box-shadow: 0 2px 8px rgba(30, 41, 59, 0.18);    
 		border-radius: 0 0 14px 14px;      padding: 12px 24px;     }
 	/*position: fixed;  
@@ -284,9 +290,9 @@ footer/*, .footer */{      background: linear-gradient(90deg, #43cea2 0%, #185a9
       margin: 10px 15px 20px;
     }
     @media (max-width: 900px) {
-/*
-	  @media(max-width:980px){
 /////////////////////////////////////////////////
+/**/
+	  @media(max-width:980px){
 			
     main{grid-template-columns:1fr} 
     .gallery img{height:184px} 
@@ -297,7 +303,7 @@ footer/*, .footer */{      background: linear-gradient(90deg, #43cea2 0%, #185a9
       }
 		
 
-      .sidebar-left,
+   /*   .sidebar-left,
       .sidebar-right {
         display: none;
       }
