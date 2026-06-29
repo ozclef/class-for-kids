@@ -4,6 +4,20 @@
 
 
 
+
+
+----
+
+2026... 
+
+<img width="1296" height="1594" alt="image" src="https://github.com/user-attachments/assets/9ab03653-5e8a-40a1-92c7-886bf819cba0" />
+
+
+
+----
+
+primera version
+
 <img width="1257" height="742" alt="image" src="https://github.com/user-attachments/assets/b0a60a6c-dacf-44a5-9a1f-cb89520428d4" />
 
 
