@@ -13,7 +13,36 @@ async function render(){
   const hash = location.hash || "#/feed";
   const [_, route] = hash.split("/");
 
-  const profile = await loadJSON("data/profile.json");
+////  const profile = await loadJSON("data/profile.json");
+
+//   const profile = await loadJSON("data/profile.json");
+const profile = await loadJSON("data/profile.json") || {
+    theme:"dark",
+    name:"oz clef",
+    bio:"Blog website online posting",
+    avatar:"/img/ico instituto abi.jpg",
+    cover:""
+};
+	
+async function loadJSON(path){
+  try{
+    const res = await fetch(path);
+
+    if(!res.ok){
+      throw new Error(`${path} ${res.status}`);
+    }
+
+    return await res.json();
+
+  }catch(err){
+    console.warn("No pude cargar:", path);
+    return null;
+  }
+}
+
+	
+//   ////////////
+	
 
   document.documentElement.className = profile.theme === "light" ? "light" : "";
 
