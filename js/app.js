@@ -19,7 +19,7 @@ async function render(){
 
   let html = `
   <header>
-    <div><strong><a href="https://oscarcruzdiaz.vercel.app">Oscar Cruz Díaz</a></strong></div>
+    <div><strong><a href="/">Kids-Gaming</a></strong></div>
     <nav>
     <a href="#/feed">Feed</a>
     <a href="#/profile">Perfil</a>
@@ -56,6 +56,10 @@ async function viewFeed(){
         <a class="btn" href="${p.url}">Abrir</a>
 		</div>
       </div>
+
+	  <div class="card-post">
+	  	<p> imagenes sobre lo visto en clase</p>
+	  </div>
 	  `;
   });
   return out + `</div>`;
