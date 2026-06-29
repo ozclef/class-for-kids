@@ -14,8 +14,6 @@ async function render(){
   const [_, route] = hash.split("/");
 
 ////  const profile = await loadJSON("data/profile.json");
-
-//   const profile = await loadJSON("data/profile.json");
 const profile = await loadJSON("data/profile.json") || {
     theme:"dark",
     name:"oz clef",
