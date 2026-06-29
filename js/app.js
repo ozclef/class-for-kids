@@ -3,12 +3,12 @@
 //  ///  
 
 const app = document.getElementById("app");
-
+/*
 async function loadJSON(path){
   const res = await fetch(path);
   return res.json();
 }
-
+*/
 async function render(){
   const hash = location.hash || "#/feed";
   const [_, route] = hash.split("/");
