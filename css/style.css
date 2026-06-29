@@ -6,7 +6,8 @@
 	
 
     :root {      --bg:  linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%); ;   
-		   --card: linear-gradient(90deg, #ffd200 0%, #f7971e 100%);      --accent: #6ce6b6;  
+		   --card: linear-gradient(90deg, #ffd200 0%, #f7971e 100%);    
+		   --accent: #6ce6b6;  
 		   --muted: #9aa0a6;    }
     body {      margin: 0;      font-family: 'Segoe UI', sans-serif;   
 		  /*background: var(--bg);    */
@@ -43,11 +44,14 @@ color: #eaf7f0;    }
 		</header>
 */
 	}
-    header h1 {      margin: 0;      font-size: 14px;      color: black;  color-text:black;  }
+    header h1 {      margin: 0;      font-size: 14px;      color: black; }
     nav a {      margin-left: 16px;      color: var(--muted);    
 		   text-decoration: none;      font-weight: 500;    }
-    .layout {      display: grid;      grid-template-columns: 260px 1fr 220px;      gap: 18px;      padding: 100px 24px 24px;    }
-    aside {   background: linear-gradient(90deg, #ffd200 0%, #f7971e 100%)  ;      padding: 12px;      border-radius: 8px;    }
+
+    .layout {      display: grid;      grid-template-columns: 260px 1fr 220px;   
+			 gap: 18px;      padding: 100px 24px 24px;    }
+    aside {   background: linear-gradient(90deg, #ffd200 0%, #f7971e 100%)  ;   
+		   padding: 12px;      border-radius: 8px;    }
     .perfil {      background: var(--card);      border-radius: 12px;     
 			 /*
 			 overflow: hidden;  
