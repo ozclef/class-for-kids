@@ -4,11 +4,11 @@
 
 const app = document.getElementById("app");
 /*
+*/
 async function loadJSON(path){
   const res = await fetch(path);
   return res.json();
 }
-*/
 async function render(){
   const hash = location.hash || "#/feed";
   const [_, route] = hash.split("/");
@@ -50,9 +50,9 @@ async function loadJSON(path){
   <header>
     <div>
 	<strong>
-		<a href="https://ozclef.github.io/cursos-verano-computacion-for-kids/">
+		<a href="https://ozclef.github.io/cursos-verano-computacion-for-kids/#/">
 			<img class="logo" src="css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg"
-					alt="logo org" transform="escale:0.1" width="40px" height="40px">
+					alt="logo org" transform="escale:0.19" width="40px" height="40px">
 					Kids-Gaming</a></strong></div>
 						<nav>
 							<a href="#/feed">Feed</a>
@@ -65,27 +65,12 @@ async function loadJSON(path){
 					</header>
 				<div class="container">
 				`;
-/*
 
-	 <header style="background: #16a34a(⁰%):blue{100%);"> 
-			<div style="font-weight:700">
-				<img class="logo" 
-					src="https://uploads.onecompiler.io/43sfe2g4e/43uaxht5p/Screenshot_20250808-025347.png"
-					alt="logo org" transform="escale:0.9" width="40px" height="40px"/>
-	  <a href="index.html">WEB KID TECH</a>
-			</div>
-    <!---
- ---->	
-    <span>
-      <input type="text" id="searchInput" placeholder="Buscar...">
-      <button onclick="searchContent()">Buscar</button>
-    </span>
-		</header>
-	*/
+	
 
   if(route === "feed") html += await viewFeed();
   if(route === "profile") html += viewProfile(profile);	
-  if(route === "cv") html += await viewCv();
+  if(route === "galery") html += await viewGalery();
   if(route === "photos") html += viewPhotos();
   if(route === "videos") html += viewVideos();
   if(route === "settings") html += viewSettings(profile);
@@ -129,7 +114,7 @@ function viewProfile(p){
 
 
 
-async function viewCv(){
+async function viewGalery(){
 
   return `
     <div class="card-post">	
@@ -144,7 +129,7 @@ async function viewCv(){
   `;
 }
 
-      ///  <!---- 			---->
+
 
 function viewPhotos(){
   return `
