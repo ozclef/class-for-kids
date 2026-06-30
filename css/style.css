@@ -179,6 +179,9 @@ background: url('/img/Screenshot_20250808-004651.png') center/cover;
 /////////////////////////////////////////////////
 		*/
 	  @media(max-width:980px){
+
+		   body { flex-direction: column
+				}
 			
     .layout , main{grid-template-columns:1fr;
 				  width:90vh;
