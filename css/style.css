@@ -75,7 +75,7 @@ background: url('css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg')
 		
 		}
 
-.container{max-width:900px;margin:auto;padding:16px;}
+.container{max-width:600px;margin:auto;padding:16px;}
 
 
 .cover{
@@ -101,7 +101,7 @@ background: url('css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg')
 
 main   {      padding: 80px 16px 60px 16px;  
 		min-width:500px;
-		/*max-width:100%;  */
+		max-width:100%;  
 		margin: 0 auto;    }
 
     .menu-btn,    .logout-btn,    .open-sidebar-btn {   
