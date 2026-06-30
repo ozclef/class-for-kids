@@ -46,7 +46,10 @@ async function loadJSON(path){
 
   let html = `
   <header>
-    <div><strong><a href="/">Kids-Gaming</a></strong></div>
+    <div><strong><a href="/">	<img class="logo" 
+					src="https://uploads.onecompiler.io/43sfe2g4e/43uaxht5p/Screenshot_20250808-025347.png"
+					alt="logo org" transform="escale:0.9" width="40px" height="40px"/>
+					Kids-Gaming</a></strong></div>
     <nav>
     <a href="#/feed">Feed</a>
     <a href="#/profile">Perfil</a>
