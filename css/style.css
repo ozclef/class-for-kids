@@ -43,7 +43,9 @@ color: #eaf7f0;    }
 
     .layout {      display: grid;   
 			 grid-template-columns: 220px 1fr 220px;   
-			 gap: 18px;      padding: 100px 24px 24px;    }
+			 gap: 18px;      padding: 100px 24px 24px;  
+			max-width:96vh;
+			}
 
     aside {   background: linear-gradient(90deg, #ffd200 0%, #f7971e 100%)  ;
 		   
