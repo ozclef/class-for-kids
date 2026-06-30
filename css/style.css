@@ -92,13 +92,13 @@ background: url('img/Screenshot_20250808-004651.png') center/cover;
 		border-radius:12px;
 		box-shadow:0 8px 20px rgba(2,6,23,0.6)}
 
-.navbar,  nav, 
-/*   */ footer
+ 
+/*  .navbar,  */  nav,  footer
  {      background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
 		color: #fff;      box-shadow: 0 2px 8px rgba(30, 41, 59, 0.18);    
 		border-radius: 0 0 14px 14px;      padding: 12px 24px;     
 		align-items: center;      justify-content: space-between;   }
-   main ,  .container {      padding: 80px 16px 60px 16px;      max-width:100%;      margin: 0 auto;    }
+   main  /*.container*/  {      padding: 80px 16px 60px 16px;      max-width:100%;      margin: 0 auto;    }
     .menu-btn,    .logout-btn,    .open-sidebar-btn {   
 		background: linear-gradient(90deg, #f7971e 0%, #ffd200 100%);
 		 color: #232323;      border: none;      border-radius: 8px; 
@@ -113,7 +113,10 @@ background: url('img/Screenshot_20250808-004651.png') center/cover;
 {
       background: linear-gradient(90deg, #ffd200 0%, #f7971e 100%);
       box-shadow: 0 4px 12px rgba(60, 60, 60, 0.22);
-    sidebar, .sidebar {
+}
+
+   /*.sidebar */
+  sidebar	{
       position: fixed;
       top: 0;
       left: 0;
@@ -165,8 +168,8 @@ background: url('img/Screenshot_20250808-004651.png') center/cover;
       align-self: flex-end;
       margin-right: 14px;
     }
-
-    layout, .layout {
+/*, .layout*/
+    layout {
       display: flex;
       height: 100vh;
       max-width: 1350px;
@@ -177,7 +180,8 @@ background: url('img/Screenshot_20250808-004651.png') center/cover;
       background: #f3f4f6;
     }
 
- /*  .main-content */ main{
+ /*  .main-content */
+main{
       flex: 1;
       background: #fff;
       padding: 16px;
