@@ -57,7 +57,9 @@ color: #eaf7f0;    }
     .layout {      display: grid;   
 			 grid-template-columns: 220px 1fr 220px;   
 			 gap: 18px;      padding: 100px 24px 24px;    }
-    aside {   background: linear-gradient(90deg, #ffd200 0%, #f7971e 100%)  ;   
+
+    aside {   background: linear-gradient(90deg, #ffd200 0%, #f7971e 100%)  ;
+		   
 		   padding: 12px;    
 		   border-radius: 8px;    }
 
@@ -69,7 +71,7 @@ color: #eaf7f0;    }
 			}
     .portada {
       height: 180px;
-      background: url('css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg') center/cover;
+      background: url('img/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg') center/cover;
       position: relative;
     }
     .foto-perfil {
@@ -101,8 +103,8 @@ background: url('https://uploads.onecompiler.io/43sfe2g4e/43uaxht5p/Screenshot_2
  /*.container*/ 
 
 main   {      padding: 80px 16px 60px 16px;  
-		min-width:700px;
-		max-width:100%;  
+		min-width:400px;
+		/*max-width:100%;  */
 		margin: 0 auto;    }
 
     .menu-btn,    .logout-btn,    .open-sidebar-btn {   
@@ -178,23 +180,16 @@ main   {      padding: 80px 16px 60px 16px;
       align-self: flex-end;
       margin-right: 14px;
     }
-/*, .layout*/
-    layout {
+/*, layout*/
+    .layout {
       display: flex;
       height: 100vh;
-      max-width: 1350px;
+      max-width: 100vh;
     }
-/*,  .sidebar-left */
+/*,  .sidebar-left * /
    sidebar{
       width: 220px;
       background: #f3f4f6;
-    }
-
- /*  .main-content */
-main{
-      flex: 1;
-      background: #fff;
-      padding: 16px;
     }
 /*, .sidebar-right*/
    sidebar {
@@ -203,6 +198,13 @@ main{
       padding: 16px;
       margin: 10px 15px 20px;
     }
+ /*  .main-content */
+main{
+      flex: 1;
+      background: #fff;
+      padding: 16px;
+    }
+
 	  @media (max-width: 768px) {
       .layout {        grid-template-columns: 1fr;      }
     /*  aside {        display: none;      } */
