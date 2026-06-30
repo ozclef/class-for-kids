@@ -121,13 +121,7 @@ function viewProfile(p){
     <img class="profile-pic" src="${p.avatar}">
     <h2>${p.name}</h2>
     <p>${p.bio}</p>
-  </div>
-
-  <!---
-  ----->
-<!--- 
------>
-					
+  </div>				
   `;
 }
 
@@ -148,17 +142,22 @@ async function viewCv(){
   `;
 }
 
-      ///  <!---- 		<iframe src="/feed/fotos.html"  width="100%" height="600"></iframe>		---->
+      ///  <!---- 			---->
 
 function viewPhotos(){
   return `
     <div class="card-post">
 		<iframe src="img/index.html"
         width="100%"
-        height="3000"
+        height="600"
         style="border:none;"
         loading="lazy">
       </iframe>
+	  </div>
+	  <br>
+	  <div class="card-post">
+	  <iframe src="/feed/fotos.html" 
+	  width="100%" height="600"></iframe>	
 	  </div>
 	  `;
 }
