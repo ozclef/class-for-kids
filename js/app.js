@@ -4,11 +4,11 @@
 
 const app = document.getElementById("app");
 /*
+*/
 async function loadJSON(path){
   const res = await fetch(path);
   return res.json();
 }
-*/
 async function render(){
   const hash = location.hash || "#/feed";
   const [_, route] = hash.split("/");
@@ -89,10 +89,6 @@ async function viewFeed(){
         <a class="btn" href="${p.url}">Abrir</a>
 		</div>
       </div>
-
-	  <div class="card-post">
-	  	<p> imagenes sobre lo visto en clase</p>
-	  </div>
 	  `;
   });
   return out + `</div>`;
@@ -123,6 +119,10 @@ async function viewGalery(){
         loading="lazy">
       </iframe>
     </div>
+
+	  <div class="card-post">
+	  	<p> imagenes sobre lo visto en clase</p>
+	  </div>
   `;
 }
 
