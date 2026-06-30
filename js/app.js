@@ -4,18 +4,18 @@
 
 const app = document.getElementById("app");
 /*
-*/
 async function loadJSON(path){
   const res = await fetch(path);
   return res.json();
 }
+*/
 async function render(){
   const hash = location.hash || "#/feed";
   const [_, route] = hash.split("/");
 
 ////  
 	const profile = await loadJSON("data/profile.json");
-	/*
+	/**/
 const profile = await loadJSON("data/profile.json") || {
     theme:"dark",
     name:"oz clef",
@@ -39,22 +39,20 @@ async function loadJSON(path){
     return null;
   }
 }
-*/
-	
+	/*
+*/	
 //   ////////////
-	
-
   document.documentElement.className = profile.theme === "light" ? "light" : "";
 
   let html = `
   <header>
-    <div>
-	<strong>
-		<a href="https://ozclef.github.io/cursos-verano-computacion-for-kids/#/">
+  	<nav>
+    	<div>
+		<strong>
+			<a href="https://ozclef.github.io/cursos-verano-computacion-for-kids/#/">
 			<img class="logo" src="css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg"
 					alt="logo org" transform="escale:0.19" width="40px" height="40px">
 					Kids-Gaming</a></strong></div>
-						<nav>
 							<a href="#/feed">Feed</a>
 							<a href="#/profile">Perfil</a>
 							<a href="#/cv">Portafolio-cv</a>
