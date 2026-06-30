@@ -42,18 +42,18 @@ color: #eaf7f0;    }
 		   font-weight: 500;  */  }
 
     .layout {      display: grid;   
-			 grid-template-columns: 220px 1fr 220px;   
+			 grid-template-columns: 200px 1fr 200px;   
 			 gap: 18px;      padding: 100px 24px 24px;  
-			max-width:96vh;
+			max-width:90vh;
 			}
 
     aside {   background: linear-gradient(90deg, #ffd200 0%, #f7971e 100%)  ;
 		   
-		   padding: 12px;    
-		   border-radius: 8px;    }
+		   padding: 8px;    
+		   border-radius: 5px;    }
 
     .perfil {      background: var(--card);    
-			 border-radius: 12px;     
+			 border-radius: 7px;     
 			 /*
 			 overflow: hidden;  
 			*/
@@ -88,16 +88,16 @@ background: url('css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg')
 }
 
 
- .card-post ,  .card 
+main .card-post , .card-post ,  .card 
 {
 	  background:var(--card);
 	  padding:16px;
 		border-radius:12px;
 		box-shadow:0 8px 20px rgba(2,6,23,0.6)
- max-width:100% ;
+ max-width: 100% ;
  }
- img {max-width:500px; escale:0.5; }
 
+ img {max-width:500px; escale:0.5; }
 
 main   {      padding: 80px 16px 60px 16px;  
 		min-width:400px;
