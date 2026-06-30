@@ -75,7 +75,7 @@ background: url('css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg')
 		
 		}
 
-  .card {
+ card-post,  .card {
 	  background:var(--card);
 	  padding:16px;
 		border-radius:12px;
