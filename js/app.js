@@ -1,6 +1,6 @@
 
 
-//  ///  
+// 
 
 const app = document.getElementById("app");
 /*
@@ -18,7 +18,7 @@ const profile = await loadJSON("data/profile.json") || {
     theme:"dark",
     name:"oz clef",
     bio:"Blog website online posting",
-    avatar:"/img/ico instituto abi.jpg",
+    avatar:"img/ico instituto abi.jpg",
     cover:""
 };
 	
@@ -46,21 +46,23 @@ async function loadJSON(path){
 
   let html = `
   <header>
-    <div><strong><a href="/">	<img class="logo" 
-					src="https://uploads.onecompiler.io/43sfe2g4e/43uaxht5p/Screenshot_20250808-025347.png"
-					alt="logo org" transform="escale:0.9" width="40px" height="40px"/>
+    <div>
+	<strong>
+		<a href="https://ozclef.github.io/cursos-verano-computacion-for-kids/">
+			<img class="logo" src="css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg"
+					alt="logo org" transform="escale:0.1" width="40px" height="40px">
 					Kids-Gaming</a></strong></div>
-    <nav>
-    <a href="#/feed">Feed</a>
-    <a href="#/profile">Perfil</a>
-    <a href="#/cv">Portafolio-cv</a>
-      <a href="#/photos">Fotos</a>
-      <a href="#/videos">Videos</a>
-      <a href="#/settings">Ajustes</a>
-    </nav>
-  </header>
-  <div class="container">
-  `;
+						<nav>
+							<a href="#/feed">Feed</a>
+							<a href="#/profile">Perfil</a>
+							<a href="#/cv">Portafolio-cv</a>
+							<a href="#/photos">Fotos</a>
+							<a href="#/videos">Videos</a>
+							<a href="#/settings">Ajustes</a>
+						</nav>
+					</header>
+				<div class="container">
+				`;
 /*
 
 	 <header style="background: #16a34a(⁰%):blue{100%);"> 
