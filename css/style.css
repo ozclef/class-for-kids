@@ -98,12 +98,22 @@ background: url('img/Screenshot_20250808-004651.png') center/cover;
 		color: #fff;      box-shadow: 0 2px 8px rgba(30, 41, 59, 0.18);    
 		border-radius: 0 0 14px 14px;      padding: 12px 24px;     
 		align-items: center;      justify-content: space-between;   }
-   main  /*.container*/  {      padding: 80px 16px 60px 16px;      max-width:100%;      margin: 0 auto;    }
+ /*.container*/ 
+
+main   {      padding: 80px 16px 60px 16px;  
+		min-width:700px;
+		max-width:100%;  
+		margin: 0 auto;    }
+
     .menu-btn,    .logout-btn,    .open-sidebar-btn {   
 		background: linear-gradient(90deg, #f7971e 0%, #ffd200 100%);
-		 color: #232323;      border: none;      border-radius: 8px; 
+		 color: #232323; 
+		border: none;  
+		border-radius: 8px; 
 		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.14);    
-		padding: 10px 14px;      font-weight: bold;      cursor: pointer;  
+		padding: 10px 14px;   
+		font-weight: bold;  
+		cursor: pointer;  
 		margin: 4px 4px;      font-size: .5em;   
 		transition: background 0.2s, box-shadow 0.2s;    }
 
