@@ -16,6 +16,7 @@
 		 
 background: linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%);  
 color: #eaf7f0;    }
+
     header {
 		  background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
 		color: #fff;    
@@ -23,7 +24,7 @@ color: #eaf7f0;    }
 		border-radius: 0 0 14px 14px;   
 		padding: 2px 4px;  
 		justify-content: space-between;   
-		align-items: center; /*flex;*/
+		align-items: flex;/*center; /*flex;*/
 		z-index: 1000;    
 		position: fixed;  
 		top: 0;      left: 0;      right: 0;     
