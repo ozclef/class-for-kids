@@ -171,20 +171,20 @@ background: url('img/Screenshot_20250808-004651.png') center/cover;
       height: 100vh;
       max-width: 1350px;
     }
-
-   sidebar,  .sidebar-left {
+/*,  .sidebar-left */
+   sidebar{
       width: 220px;
       background: #f3f4f6;
     }
 
-  main,   .main-content {
+ /*  .main-content */ main{
       flex: 1;
       background: #fff;
       padding: 16px;
     }
-
-   sidebar, .sidebar-right {
-      width: 300px;
+/*, .sidebar-right*/
+   sidebar {
+      width: 220px;
       background: #fafafa;
       padding: 16px;
       margin: 10px 15px 20px;
