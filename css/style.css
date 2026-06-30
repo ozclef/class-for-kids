@@ -29,6 +29,7 @@ color: #eaf7f0;    }
 		position: fixed;  
 		top: 0;      left: 0;      right: 0;     
 		display: flex;     
+		flex-direction: flex;
 	}
 
     header h1 {      margin: 0;     
@@ -123,31 +124,11 @@ main   {      padding: 80px 16px 60px 16px;
       transform: translateX(-100%);
       transition: transform 0.5s;
     }
+
+
 	  @media (max-width: 768px) {
       .layout {        grid-template-columns: 1fr;      }
     /*  aside {        display: none;      } */
       .datos {        grid-template-columns: 1fr;      }
     }
 
-
-/*
-    .layout {
-      display: flex;
-      height: 100vh;
-      max-width: 100vh;
-    }
-
-   sidebar {
-      width: 220px;
-      background: #fafafa;
-      padding: 16px;
-      margin: 10px 15px 20px;
-    }
- /*  .main-content */  /*
-main{
-      flex: 1;
-      background: #fff;
-      padding: 16px;
-    }
-
-*/
