@@ -95,7 +95,8 @@ function viewProfile(p){
     <img class="profile-pic" src="${p.avatar}">
     <h2>${p.name}</h2>
     <p>${p.bio}</p>
-  </div>				
+  </div>	
+  
   `;
 }
 
@@ -120,17 +121,11 @@ async function viewGalery(){
 
 
 function viewPhotos(){
-  return `
-    <div class="card-post">
-		<iframe src="img/index.html"
-        width="100%"
-        height="600"
-        style="border:none;"
-        loading="lazy">
-      </iframe>
-	  </div>
+  return ` 
 	  <br>
 	  <div class="card-post">
+	  <h2> AUN SIGO TOMANDO EN CUENTA CADA DETALLE! </h2>
+	  <p> PERSONAJES, Softwares, gaming, Colors </p>
 	  <iframe src="/feed/fotos.html" 
 	  width="100%" height="600"></iframe>	
 	  </div>
@@ -158,12 +153,6 @@ function viewSettings(p){
   <div class="card-post"><h2>Ajustes</h2>
     <p>Tema actual: <strong>${p.theme}</strong></p>
     <p>(En próxima versión editable desde UI)</p>
-/*
-  <div class="card-post">
-  <img src="/css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg">
-  <iframe src="/feed/profile.html" width="97%" height="1503px"></iframe>
-  </div>
-*/
   </div>`;
 }
 
@@ -171,3 +160,18 @@ window.addEventListener("hashchange", render);
 render();
 
 
+
+/*
+  <div class="card-post">
+  <img src="/css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg">
+  <iframe src="/feed/profile.html" width="97%" height="1503px"></iframe>
+  </div>
+     <div class="card-post">
+		<iframe src="img/index.html"
+        width="100%"
+        height="600"
+        style="border:none;"
+        loading="lazy">
+      </iframe>
+	  </div>
+*/
