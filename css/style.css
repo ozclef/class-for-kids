@@ -94,13 +94,13 @@ background: url('css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg')
 	  padding:16px;
 		border-radius:12px;
 		box-shadow:0 8px 20px rgba(2,6,23,0.6)
- max-width:600px ;
+ max-width:100% ;
  }
- img {max-width:440px;}
+ img {max-width:100%;}
 
 
 main   {      padding: 80px 16px 60px 16px;  
-		min-width:500px;
+		min-width:400px;
 		max-width:100%;  
 		margin: 0 auto;    }
 
