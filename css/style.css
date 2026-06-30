@@ -79,7 +79,9 @@ background: url('css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg')
 	  background:var(--card);
 	  padding:16px;
 		border-radius:12px;
-		box-shadow:0 8px 20px rgba(2,6,23,0.6)}
+		box-shadow:0 8px 20px rgba(2,6,23,0.6)
+ max-width:600px ;
+ }
 
  
 
