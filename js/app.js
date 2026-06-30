@@ -71,7 +71,7 @@ async function loadJSON(path){
 
 async function viewFeed(){
   const feed = await loadJSON("data/feed.json");
-  let out = `<div class="card"><h2>Feed</h2>`;
+  let out = `<div class="card-post"><h2>POSTs</h2>`;
  feed.forEach(p=>{
     out += `
     <div class="feed-item">
@@ -91,7 +91,7 @@ async function viewFeed(){
 function viewProfile(p){
   return `
 <div class="cover" style="background-image:url('${p.cover}')"></div>
-  <div class="card">
+  <div class="card-post">
     <img class="profile-pic" src="${p.avatar}">
     <h2>${p.name}</h2>
     <p>${p.bio}</p>
