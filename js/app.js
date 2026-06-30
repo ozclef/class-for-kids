@@ -13,8 +13,7 @@ async function render(){
   const hash = location.hash || "#/feed";
   const [_, route] = hash.split("/");
 
-////  
-	const profile = await loadJSON("data/profile.json");
+////  	const profile = await loadJSON("data/profile.json");
 	/**/
 const profile = await loadJSON("data/profile.json") || {
     theme:"dark",
