@@ -1,25 +1,22 @@
 
 
-// 
-
 const app = document.getElementById("app");
-/*
+
 async function loadJSON(path){
   const res = await fetch(path);
   return res.json();
-*/
 }
+
 async function render(){
   const hash = location.hash || "#/feed";
   const [_, route] = hash.split("/");
 
-////  	const profile = await loadJSON("data/profile.json");
-	/**/
+//   const profile = await loadJSON("data/profile.json");
 const profile = await loadJSON("data/profile.json") || {
     theme:"dark",
     name:"oz clef",
     bio:"Blog website online posting",
-    avatar:"img/ico instituto abi.jpg",
+    avatar:"/img/ico instituto abi.jpg",
     cover:""
 };
 	
@@ -38,9 +35,7 @@ async function loadJSON(path){
     return null;
   }
 }
-	/*
-*/	
-//   ////////////
+
   document.documentElement.className = profile.theme === "light" ? "light" : "";
 
   let html = `
