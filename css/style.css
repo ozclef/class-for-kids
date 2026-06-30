@@ -60,7 +60,7 @@ color: #eaf7f0;    }
 			}
     .portada {
       height: 180px;
-      background: url('img/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg') center/cover;
+      background: url('/css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg') center/cover;
       position: relative;
     }
     .foto-perfil {
