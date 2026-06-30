@@ -40,16 +40,16 @@ async function loadJSON(path){
 
   let html = `
   <header>
-  	<nav>
     	<div>
 		<strong>
 			<a href="https://ozclef.github.io/cursos-verano-computacion-for-kids/#/">
 			<img class="logo" src="css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg"
 					alt="logo org" transform="escale:0.19" width="40px" height="40px">
 					Kids-Gaming</a></strong></div>
+						<nav>
 							<a href="#/feed">Feed</a>
 							<a href="#/profile">Perfil</a>
-							<a href="#/cv">Portafolio-cv</a>
+							<a href="#/galery">Post</a>
 							<a href="#/photos">Fotos</a>
 							<a href="#/videos">Videos</a>
 							<a href="#/settings">Ajustes</a>
@@ -57,9 +57,7 @@ async function loadJSON(path){
 					</header>
 				<div class="container">
 				`;
-
 	
-
   if(route === "feed") html += await viewFeed();
   if(route === "profile") html += viewProfile(profile);	
   if(route === "galery") html += await viewGalery();
@@ -107,7 +105,8 @@ async function viewGalery(){
 
   return `
     <div class="card-post">	
-      <h2>CV</h2>
+  	<p> imagenes sobre lo visto en clase</p>
+      <h2> pics  posts</h2>
       <iframe src="feed/index.html"
         width="100%"
         height="3000px"
@@ -115,10 +114,6 @@ async function viewGalery(){
         loading="lazy">
       </iframe>
     </div>
-
-	  <div class="card-post">
-	  	<p> imagenes sobre lo visto en clase</p>
-	  </div>
   `;
 }
 
