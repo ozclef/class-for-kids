@@ -4,10 +4,10 @@
 
 const app = document.getElementById("app");
 /*
-*/
 async function loadJSON(path){
   const res = await fetch(path);
   return res.json();
+*/
 }
 async function render(){
   const hash = location.hash || "#/feed";
@@ -78,7 +78,7 @@ async function loadJSON(path){
 
 async function viewFeed(){
   const feed = await loadJSON("data/feed.json");
-  let out = `<div class="card-post"><h2>Feed</h2>`;
+  let out = `<div class="card"><h2>Feed</h2>`;
  feed.forEach(p=>{
     out += `
     <div class="feed-item">
@@ -93,6 +93,7 @@ async function viewFeed(){
   });
   return out + `</div>`;
 }
+
 
 function viewProfile(p){
   return `
