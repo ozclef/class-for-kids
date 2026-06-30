@@ -10,7 +10,7 @@
 		   --accent: #6ce6b6;  
 		   --muted: #9aa0a6;    }
     body {      margin: 0;      font-family: 'Segoe UI', sans-serif;   
-		  /*background: var(--bg);    */
+		  
 background: linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%);  
 color: #eaf7f0;    }
     header {
@@ -28,20 +28,7 @@ color: #eaf7f0;    }
 	}
 		/*background: var(--card);      padding: 12px 24px;     
 /*
-		 <header style="background: #16a34a(⁰%):blue{100%);"> 
-			<div style="font-weight:700">
-				<img class="logo" 
-					src="https://uploads.onecompiler.io/43sfe2g4e/43uaxht5p/Screenshot_20250808-025347.png"
-					alt="logo org" transform="escale:0.9" width="40px" height="40px"/>
-	  <a href="index.html">WEB KID TECH</a>
-			</div>
-    <!---
- ---->	
-    <span>
-      <input type="text" id="searchInput" placeholder="Buscar...">
-      <button onclick="searchContent()">Buscar</button>
-    </span>
-		</header>
+		
 */
 	}
     header h1 {      margin: 0;     
@@ -180,18 +167,13 @@ main   {      padding: 80px 16px 60px 16px;
       align-self: flex-end;
       margin-right: 14px;
     }
-/*, layout*/
+
     .layout {
       display: flex;
       height: 100vh;
       max-width: 100vh;
     }
-/*,  .sidebar-left * /
-   sidebar{
-      width: 220px;
-      background: #f3f4f6;
-    }
-/*, .sidebar-right*/
+
    sidebar {
       width: 220px;
       background: #fafafa;
