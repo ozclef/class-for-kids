@@ -180,9 +180,10 @@ background: url('/img/Screenshot_20250808-004651.png') center/cover;
 		*/
 	  @media(max-width:980px){
 			
-    main{grid-template-columns:1fr} 
-    .gallery img{height:184px} 
+    .layout , main{grid-template-columns:1fr} 
+    .gallery img{height:899px} 
 
+		  /*
      .container {
         max-width: 98vw;
         padding: 80px 2vw 60px 2vw;
