@@ -24,9 +24,9 @@ color: #eaf7f0;    }
 		z-index: 1000;    
 		position: fixed;  
 		top: 0;      left: 0;      right: 0;     
+		display: flex;     
 	}
 		/*background: var(--card);      padding: 12px 24px;     
-		display: flex;     
 /*
 		 <header style="background: #16a34a(⁰%):blue{100%);"> 
 			<div style="font-weight:700">
@@ -44,22 +44,32 @@ color: #eaf7f0;    }
 		</header>
 */
 	}
-    header h1 {      margin: 0;      font-size: 14px;      color: black; }
-    nav a {      margin-left: 16px;      color: black;  /*var(--muted);    */
-		   text-decoration: none;      font-weight: 500;    }
+    header h1 {      margin: 0;     
+			   font-size: 14px;   
+			   color: black; }
 
-    .layout {      display: grid;      grid-template-columns: 260px 1fr 220px;   
+    nav a {      margin-left: 16px;   
+		   color: black;
+		   /*var(--muted);    */
+		   text-decoration: none;   
+		   font-weight: 500;    }
+
+    .layout {      display: grid;   
+			 grid-template-columns: 220px 1fr 220px;   
 			 gap: 18px;      padding: 100px 24px 24px;    }
     aside {   background: linear-gradient(90deg, #ffd200 0%, #f7971e 100%)  ;   
-		   padding: 12px;      border-radius: 8px;    }
-    .perfil {      background: var(--card);      border-radius: 12px;     
+		   padding: 12px;    
+		   border-radius: 8px;    }
+
+    .perfil {      background: var(--card);    
+			 border-radius: 12px;     
 			 /*
 			 overflow: hidden;  
 			*/
 			}
     .portada {
       height: 180px;
-      background: url('/css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg') center/cover;
+      background: url('css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg') center/cover;
       position: relative;
     }
     .foto-perfil {
@@ -70,13 +80,14 @@ color: #eaf7f0;    }
       height: 120px;
       border-radius: 50%;
       border: 4px solid var(--card);
-background: url('/img/Screenshot_20250808-004651.png') center/cover;
+background: url('img/Screenshot_20250808-004651.png') center/cover;
 		/*
 	background: url('https://i.imgur.com/1X1X1X1.jpg') center/cover;
    --bg:#0b0614;	   --card:#0f1220; 	   --muted:#98a3bf; 	   --accent:#6d28d9;	   }	   
 	   --accent-2:#fbbf24;	   --radius:12px; 		 --container:1100px;	   --text:#eef3ff;			   :root { }
 		 */	
 	}
+
   .card{background:var(--card);padding:16px;
 		border-radius:12px;
 		box-shadow:0 8px 20px rgba(2,6,23,0.6)}
@@ -95,7 +106,11 @@ background: url('/img/Screenshot_20250808-004651.png') center/cover;
 		padding: 10px 14px;      font-weight: bold;      cursor: pointer;  
 		margin: 4px 4px;      font-size: .5em;   
 		transition: background 0.2s, box-shadow 0.2s;    }
-  button ,  .menu-btn:hover,    .logout-btn:hover,    .open-sidebar-btn:hover {
+
+  button ,  .menu-btn:hover, 
+.logout-btn:hover, 
+.open-sidebar-btn:hover
+{
       background: linear-gradient(90deg, #ffd200 0%, #f7971e 100%);
       box-shadow: 0 4px 12px rgba(60, 60, 60, 0.22);
     sidebar, .sidebar {
