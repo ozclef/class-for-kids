@@ -87,8 +87,7 @@ background: url('css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg')
 	margin-bottom:12px
 }
 
-
-main .card-post , .card-post ,  .card 
+ .card-post , .card-post ,  .card 
 {
 	  background:var(--card);
 	  padding:16px;
@@ -97,7 +96,7 @@ main .card-post , .card-post ,  .card
  max-width: 90% ;
  }
 
- img {max-width:500px; escale:0.5; }
+ img {width:400px; escale:0.5; }
 
 main   {      padding: 80px 16px 60px 16px;  
 		/*min-width:500px;*/
