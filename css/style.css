@@ -44,7 +44,7 @@ color: #eaf7f0;    }
     .layout {      display: grid;   
 			 grid-template-columns: 200px 1fr 200px;   
 			 gap: 18px;      padding: 100px 24px 24px;  
-			max-width:90vh;
+			width:95vh;
 			}
 
     aside {   background: linear-gradient(90deg, #ffd200 0%, #f7971e 100%)  ;
@@ -75,7 +75,7 @@ background: url('css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg')
 		
 		}
 
-.container{max-width:600px;margin:auto;padding:16px;}
+/*.container{max-width:600px;margin:auto;padding:16px;}*/
 
 
 .cover{
@@ -100,7 +100,7 @@ main .card-post , .card-post ,  .card
  img {max-width:500px; escale:0.5; }
 
 main   {      padding: 80px 16px 60px 16px;  
-		min-width:400px;
+		min-width:500px;
 		max-width:100%;  
 		margin: 0 auto;    }
 
@@ -115,7 +115,7 @@ main   {      padding: 80px 16px 60px 16px;
 		cursor: pointer;  
 		margin: 4px 4px;      font-size: .5em;   
 		transition: background 0.2s, box-shadow 0.2s;    }
-
+reee
   button ,  .menu-btn:hover, 
 .logout-btn:hover, 
 .open-sidebar-btn:hover
