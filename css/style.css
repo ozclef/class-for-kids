@@ -94,13 +94,13 @@ main .card-post , .card-post ,  .card
 	  padding:16px;
 		border-radius:12px;
 		box-shadow:0 8px 20px rgba(2,6,23,0.6)
- max-width: 100% ;
+ max-width: 90% ;
  }
 
  img {max-width:500px; escale:0.5; }
 
 main   {      padding: 80px 16px 60px 16px;  
-		min-width:500px;
+		/*min-width:500px;*/
 		max-width:100%;  
 		margin: 0 auto;    }
 
