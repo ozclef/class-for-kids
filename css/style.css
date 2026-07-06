@@ -84,7 +84,7 @@ nav a{
 }
 .container{
 	/*max-width:1100px;*/
-		   margin:auto;padding:16px;}
+		   margin:2px;padding:16px;}
 
 .profile-pic{
   width:150px;
@@ -100,7 +100,16 @@ nav a{
 	height:180px;
 	background-size:cover;
 	background-position:center;
-	margin-bottom:12px
+	margin-bottom:12px;
+	  box-shadow: 0 0 12px rgba(255,255,255,0.05);
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(
+    90deg,
+    var(--accent1),
+    var(--accent2),
+    var(--accent3)
+  ) 1;
+
 }
 /**/
 .card{
@@ -108,6 +117,16 @@ nav a{
 	padding:16px;
 	border-radius:var(--radius);
   margin-bottom:16px;
+
+	  box-shadow: 0 0 12px rgba(255,255,255,0.05);
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(
+    90deg,
+    var(--accent1),
+    var(--accent2),
+    var(--accent3)
+  ) 1;
+
 }
 /**/
 .feed-item{
@@ -151,8 +170,25 @@ nav a {      margin-left: 16px;
 
 
         .layout {      display: grid;      grid-template-columns: 220px 1fr 220px;
-				 gap: 18px;      padding: 50px 24px 24px;    }
-main {width:100%;} 
+				 gap: 18px;      padding: 50px 24px 24px;  
+				 box-shadow: 0 0 12px rgba(255,255,255,0.05);
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(
+    90deg,
+    var(--accent1),
+    var(--accent2),
+    var(--accent3)
+  ) 1;
+  }
+main {width:100%;  box-shadow: 0 0 12px rgba(255,255,255,0.05);
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(
+    90deg,
+    var(--accent1),
+    var(--accent2),
+    var(--accent3)
+  ) 1;
+} 
 
     
     aside {      background: var(--card);      padding: 12px;  
@@ -160,11 +196,31 @@ main {width:100%;}
 
     
     .perfil {      background: var(--card);  
-			 border-radius: 12px;      overflow: hidden;    }
+			 border-radius: 12px;      overflow: hidden;  
+			
+			  box-shadow: 0 0 12px rgba(255,255,255,0.05);
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(
+    90deg,
+    var(--accent1),
+    var(--accent2),
+    var(--accent3)
+  ) 1;
+}
 
 
     .portada {      height: 180px;      
 			  background: url('/Screenshot_7-4-2026_64216_github.com.jpeg') center/cover;
+
+			    box-shadow: 0 0 12px rgba(255,255,255,0.05);
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(
+    90deg,
+    var(--accent1),
+    var(--accent2),
+    var(--accent3)
+  ) 1;
+
 
 			  /*
 Screenshot_7-4-2026_64229_github.com.jpeg
@@ -181,6 +237,16 @@ Screenshot_7-4-2026_64229_github.com.jpeg
 				  border: 4px solid var(--card); 
 				  /*background: url('https://i.imgur.com/1X1X1X1.jpg') center/cover;*/  
 				  background: url('/img/os traje negro perfo.jpg') center/cover;
+
+				    box-shadow: 0 0 12px rgba(255,255,255,0.05);
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(
+    90deg,
+    var(--accent1),
+    var(--accent2),
+    var(--accent3)
+  ) 1;
+
 				 }
     .info {      padding: 60px 24px 24px;    }
     .info h2 {      margin: 0;      font-size: 22px;    }
