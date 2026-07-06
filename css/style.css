@@ -79,7 +79,7 @@ background: url('css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg')
 		
 		}
 
-/*.container{max-width:600px;margin:auto;padding:16px;}*/
+.container{width:100%;margin:auto;padding:16px;}
 
 
 .cover{
@@ -91,7 +91,7 @@ background: url('css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg')
 	margin-bottom:12px
 }
 
- .card-post , .card-post ,  .card 
+ .card-post  ,  .card 
 {
 	  background:var(--card);
 	  padding:16px;
