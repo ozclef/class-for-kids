@@ -45,7 +45,7 @@
     }
 
     .menu-btn,
-    .logout-btn,
+  /*  .logout-btn,
     .open-sidebar-btn {
       background: linear-gradient(90deg, #f7971e 0%, #ffd200 100%);
       color: #232323;
@@ -117,6 +117,8 @@
       align-self: flex-end;
       margin-right: 14px;
     }
+
+*/
 
     .layout {
       display: flex;
