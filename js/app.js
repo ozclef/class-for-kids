@@ -39,6 +39,7 @@ async function loadJSON(path){
   document.documentElement.className = profile.theme === "light" ? "light" : "";
 
   let html = `
+  
   <header>
     	<div>
 		<strong>
@@ -75,7 +76,7 @@ async function viewFeed(){
  feed.forEach(p=>{
     out += `
     <div class="feed-item">
-      <img class="thumb" loading="lazy" src="${p.img}">
+      <img class="thumb" loading="lazy"  width="90%"  src="${p.img}">
       <div>
         <h3>${p.title}</h3>
         <p>${p.text}</p>
@@ -127,7 +128,7 @@ function viewPhotos(){
 	  <h2> AUN SIGO TOMANDO EN CUENTA CADA DETALLE! </h2>
 	  <p> PERSONAJES, Softwares, gaming, Colors </p>
 	  <iframe src="/feed/fotos.html" 
-	  width="100%" height="600"></iframe>	
+	  width="400px" height="600"></iframe>	
 	  </div>
 	  `;
 }
