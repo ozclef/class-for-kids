@@ -21,7 +21,7 @@
 		font-family: 'Segoe UI', sans-serif;  
 		background: linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%);  
 		color: #eaf7f0;   
-		width:100vh;
+		min-width:100vh;
 	}
 
     header {
@@ -89,7 +89,7 @@ background: url('css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg')
 		
 		}
 
-.container{width:100%;margin:auto;padding:16px;}
+.container{min-width:100vh;margin:auto;padding:16px;}
 
 
 .cover{
