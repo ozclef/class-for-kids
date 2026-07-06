@@ -7,18 +7,25 @@
 */
 	
 
-    :root {      --bg: linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%);  
+    :root {  
+		--bg: linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%);  
 		   --card: linear-gradient(90deg, #ffd200 0%, #f7971e 100%);    
 		   --accent: #6ce6b6;  
 		   --muted: #9aa0a6;   
+		/*   verde brondo 
+		linear-gradient(90deg, #43cea2 0%, #185a9d 100%) */
 		  }
-    html, body {      margin: 0;      font-family: 'Segoe UI', sans-serif;   
-		 
-background: linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%);  
-color: #eaf7f0;    }
+
+    html, body {  
+		margin: 0;
+		font-family: 'Segoe UI', sans-serif;  
+		background: linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%);  
+		color: #eaf7f0;   
+		width:100vh;
+	}
 
     header {
-		  background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+		  background:;
 		color: #fff;    
 		box-shadow: 0 2px 8px rgba(30, 41, 59, 0.18);    
 		border-radius: 0 0 14px 14px;   
@@ -39,7 +46,9 @@ color: #eaf7f0;    }
     nav a {      margin-left: 16px;   
 		   color: black;		  
 		/*   text-decoration: none;   
-		   font-weight: 500;  */  }
+		   */
+		   font-weight: 500;  
+		  }
 
     .layout {      display: grid;   
 			 grid-template-columns: 200px 1fr 200px;   
@@ -51,7 +60,7 @@ color: #eaf7f0;    }
 
 		   main   {      padding: 80px 16px 60px 16px;  
 		/*min-width:500px;*/
-		width:100%;  
+		width:600px;  
 		margin: 0 auto;    
 		   padding: 8px;    
 		   border-radius: 5px;    }
