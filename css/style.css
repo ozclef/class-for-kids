@@ -137,7 +137,7 @@ background: url('css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg')
       box-shadow: 0 4px 12px rgba(60, 60, 60, 0.22);
 }
 
-
+footer{ background:(--bg);}
 
 	  @media (max-width: 768px) {
       .layout {        grid-template-columns: 1fr;      }
