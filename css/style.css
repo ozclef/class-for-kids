@@ -58,9 +58,10 @@
 
     aside {   background: linear-gradient(90deg, #ffd200 0%, #f7971e 100%)  ;
 
-		   main   {      padding: 80px 16px 60px 16px;  
+		   main   {   
+			   padding: 80px 16px 60px 16px;  
 		/*min-width:500px;*/
-		width:600px;  
+		min-width:600px;  
 		margin: 0 auto;    
 		   padding: 8px;    
 		   border-radius: 5px;    }
