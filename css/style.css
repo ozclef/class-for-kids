@@ -95,7 +95,7 @@ background: url('css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg')
 
 
 .cover{
-  width:100%;
+  min-width:100%;
 	border-radius:var(--radius);
 	height:180px;
 	background-size:cover;
@@ -109,14 +109,12 @@ background: url('css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg')
 	  padding:16px;
 		border-radius:12px;
 		box-shadow:0 8px 20px rgba(2,6,23,0.6)
- max-width: 90% ;
+ /*max-width: 100% ;*/
  }
 
- img {width:400px; escale:0.5; }
-
-
-
-
+ img {width:400px; 
+	  /*escale:0.5; }*/
+	 }
     .menu-btn,    .logout-btn,    .open-sidebar-btn {   
 		background: linear-gradient(90deg, #f7971e 0%, #ffd200 100%);
 		 color: #232323; 
