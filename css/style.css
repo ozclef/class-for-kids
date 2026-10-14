@@ -4,27 +4,26 @@
 /* --- Variables (puedes convertir a SCSS fácilmente) --- * /
 $bg: #0f172a; $card:#0b1220; $accent:#3b82f6; $muted:#94a3b8; $glass: rgba(255,255,255,0.04)
 /*
+*/
 
     :root {  
-	VERDE AZUL BLANCO 	--bg: linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%);  
-AMARILLO DORADO!		   --card: linear-gradient(90deg, #ffd200 0%, #f7971e 100%);    
+	VERDE AZUL BLANCO 
+		--bg: linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%);  
+		
+		AMARILLO DORADO!		
+		--card: linear-gradient(90deg, #ffd200 0%, #f7971e 100%);    
 		   --accent: #6ce6b6;  
 		   --muted: #9aa0a6;   
-		/*   verde brondo 
-		linear-gradient(90deg, #43cea2 0%, #185a9d 100%)
-* /
+		
+/*verde brondo */
+		/*
+		linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+*//*
 		  }
 
-    html, body {  
-		margin: 0;
-		font-family: 'Segoe UI', sans-serif;  
-		background: linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%);  
-		color: #eaf7f0;   
-		min-width:100vh;
-	}
 
 
-*/
+*/ /*
 :root {
   --bg: #161c25;
 	
@@ -49,17 +48,28 @@ AMARILLO DORADO!		   --card: linear-gradient(90deg, #ffd200 0%, #f7971e 100%);
   
 }
 
+/*
 :root.light {
   --bg:#f3f4f6;
   --card:white;
   --text:rgb(((163, 180, 204), 180, 209), 165, 184);
   --muted: #6b7280;
 }
-
 *{box-sizing:border-box;font-family:Inter,system-ui}
+*/
 
-body{margin:0;background:var(--bg);
+    html, body {  
+		margin: 0;
+		font-family: 'Segoe UI', sans-serif;  
+		background: linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%);  
+		color: #eaf7f0;   
+		min-width:100vh;
+/*
+	}
+body{
+	margin:0;background:var(--bg);
 	 color:var(--text);transition:.25s	 
+*/
 	 }
 
 header{
@@ -70,6 +80,8 @@ header{
 	position:sticky;
 	top:0;z-index:10
 }
+
+
 nav a{
   margin-left:12px;	
 	text-decoration:none;
