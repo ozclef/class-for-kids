@@ -7,17 +7,17 @@ $bg: #0f172a; $card:#0b1220; $accent:#3b82f6; $muted:#94a3b8; $glass: rgba(255,2
 */
 
     :root {  
-	VERDE AZUL BLANCO 
+	/*VERDE AZUL BLANCO */
 		--bg: linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%);  
 		
-		AMARILLO DORADO!		
+		/*AMARILLO DORADO!	*/	
 		--card: linear-gradient(90deg, #ffd200 0%, #f7971e 100%);    
 		   --accent: #6ce6b6;  
 		   --muted: #9aa0a6;   
 		
 /*verde brondo */
-		/*
-		linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+		
+		--card2: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
 *//*
 		  }
 
