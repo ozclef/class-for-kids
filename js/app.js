@@ -114,8 +114,9 @@ function viewProfile(p){
 async function viewGalery(){
 
   return `
-    <div class="card-post">	
-  	<!---<p> imagenes sobre lo visto en clase</p>
+  	<!---
+    <div class="feed-item">	
+	<p> imagenes sobre lo visto en clase</p>
       <h2> pics  posts</h2>
       <iframe src="feed/index.html"
         width="90%"
@@ -123,11 +124,14 @@ async function viewGalery(){
         style="border:none;"
         loading="lazy">
       </iframe>---->
-      <div class="card">
+
+	  
+	  
+      <div class="feed-item">
 		  <p>"Durante un taller con estudiantes de 10 a 12 años descubrí que las actividades prácticas con Arduino mantenían mucho mejor la atención que una clase expositiva. Una dinámica de preguntas improvisadas me permitió evaluar comprensión en tiempo real."</p>
 	    </div>
 	
-      <div class="card">
+      <div class="feed-item">
 		  <h2>AJEDREZ & Studient</h2>
 		  <p>"Uno de los momentos que más recuerdo fue 
 			  jugar ajedrez con un estudiante que tenía un talento natural para el juego. <br>
@@ -135,7 +139,7 @@ async function viewGalery(){
 			  me hizo recordar que un docente también aprende de sus alumnos."</p>
 	    </div>
 	
-      <div class="card">
+      <div class="feed-item">
 	<p>
 		 "Lo único que me molesta es que no me 
 		agreguen al grupo para ver mis propios memes." 
@@ -145,25 +149,25 @@ async function viewGalery(){
 	</p>
       </div>
 	
-      <div class="card">
+      <div class="feed-item">
 		  <h3></h3>
 		  <p></p>
       </div>
 			<br><br>
-      <div class="card">
+      <div class="feed-item">
         <h2>ESTE LOBO ES DE ALGUIEN QUE CONOZCO</h2>
         <p>Hecho por ella-ARTE</p>
         <img src="https://uploads.onecompiler.io/43sfe2g4e/43uaxht5p/Screenshot_20250808-025347.png"
           style="max-width:180px; border:3px solid pink;">
         <p>Comenta!</p>
       </div>
-      <div class="card">
+      <div class="feed-item">
         <h3>niños pequeños aprendieron en computación a diseñar un personaje para un videojuego</h3>
         <img src="https://uploads.onecompiler.io/43sfe2g4e/43uaxht5p/image_1756007342901.png">
       </div>
 
 	
-      <div class="card">
+      <div class="feed-item">
         <h3>Alumnos de Verano</h3>
         <p>Pre-view del juego creado en GDevelop.io</p>
 		  
