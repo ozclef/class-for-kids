@@ -188,11 +188,11 @@ async function viewGalery(){
 function viewPhotos(){
   return ` 
 	  <br>
-	  <div class="card-post">
+	  <div class="feed-item">
 	  <h2> AUN SIGO TOMANDO EN CUENTA CADA DETALLE! </h2>
 	  <p> PERSONAJES, Softwares, gaming, Colors </p>
 	  <iframe src="feed/fotos.html" 
-	  width="400px" height="6000"></iframe>	
+	  width="100%" height="6000"></iframe>	
 	  </div>
 	  `;
 }
