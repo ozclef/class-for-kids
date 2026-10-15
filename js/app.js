@@ -113,8 +113,8 @@ async function viewGalery(){
   	<p> imagenes sobre lo visto en clase</p>
       <h2> pics  posts</h2>
       <iframe src="feed/index.html"
-        width="100%"
-        height="3000px"
+        width="90%"
+        height="10000"
         style="border:none;"
         loading="lazy">
       </iframe>
@@ -130,8 +130,8 @@ function viewPhotos(){
 	  <div class="card-post">
 	  <h2> AUN SIGO TOMANDO EN CUENTA CADA DETALLE! </h2>
 	  <p> PERSONAJES, Softwares, gaming, Colors </p>
-	  <iframe src="/feed/fotos.html" 
-	  width="400px" height="600"></iframe>	
+	  <iframe src="feed/fotos.html" 
+	  width="400px" height="6000"></iframe>	
 	  </div>
 	  `;
 }
@@ -142,7 +142,7 @@ function viewVideos(){
   <div class="card">
         <h2>Videos devs en facebook/youtube... </h2>
 
-      <iframe src="/feed/videos.html"
+      <iframe src="feed/videos.html"
         width="100%"
         height="3000"
         style="border:none;"
