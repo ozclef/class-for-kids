@@ -274,10 +274,11 @@ Screenshot_7-4-2026_64229_github.com.jpeg
 	padding:10px 0;
   border-bottom:1px solid rgba(255,255,255,.05)
 }
-.thumb{width:320px;
-	   height:80px;
+.thumb{width:520px;
+	   height:380px;
 	   object-fit:cover;
-	   border-radius:8px}
+	   border-radius:8px
+	  }
 
 	  
     @media (max-width: 768px) {
