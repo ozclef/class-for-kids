@@ -8,6 +8,8 @@
 
 octubre
 
+https://class-tech-kids.vercel.app/
+
 <img width="844" height="3784" alt="image" src="https://github.com/user-attachments/assets/901ed111-418f-4f05-baae-086e6f7ffe78" />
 
 HE Tardado, pero yo prometí a los alumnos , un URL donde quede en un sólo CLICK,
