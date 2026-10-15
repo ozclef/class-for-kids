@@ -149,7 +149,7 @@ nav a {      margin-left: 16px;
   }
 
 main {	width:100%; 
-	 /*  background: var(--card);   */
+	  background: var(--bg);  
 	  box-shadow: 0 0 12px rgba(255,255,255,0.05);
   border-bottom: 2px solid transparent;
   border-image: linear-gradient(
