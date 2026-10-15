@@ -48,6 +48,10 @@ async function loadJSON(path){
 					Kids-Gaming</a>
 					</strong>
 					</div>
+					 <span>
+		  <input type="text" id="searchInput" placeholder="Buscar...">
+		  <button onclick="searchContent()">Buscar</button>
+	  </span>	
 						<nav>
 							<a href="#/feed">Feed</a>
 							<a href="#/profile">Perfil</a>
