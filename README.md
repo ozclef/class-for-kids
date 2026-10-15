@@ -8,7 +8,7 @@
 
 octubre
 
-<img width="912" height="1124" alt="image" src="https://github.com/user-attachments/assets/2605295a-7fc4-458d-a078-f92903e28a9b" />
+<img width="844" height="3784" alt="image" src="https://github.com/user-attachments/assets/901ed111-418f-4f05-baae-086e6f7ffe78" />
 
 HE Tardado, pero yo prometí a los alumnos , un URL donde quede en un sólo CLICK,
 todo lo que se vivió en 5 semanas de sólo unos pocos cursos de verano.
@@ -25,8 +25,6 @@ se necesitan manos como esos alumnos que trabajarone n equipo
 ----
 
 primera version
-
-<img width="1257" height="742" alt="image" src="https://github.com/user-attachments/assets/b0a60a6c-dacf-44a5-9a1f-cb89520428d4" />
 
 
 ---
