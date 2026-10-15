@@ -39,14 +39,15 @@ async function loadJSON(path){
   document.documentElement.className = profile.theme === "light" ? "light" : "";
 
   let html = `
-  
   <header>
     	<div>
 		<strong>
-			<a href="https://ozclef.github.io/cursos-verano-computacion-for-kids/#/">
+			<a href="https://ozclef.github.io/class-for-kids/">
 			<img class="logo" src="css/Captura de pantalla_29-6-2026_15819_ozclef.github.io.jpeg"
 					alt="logo org" transform="escale:0.19" width="40px" height="40px">
-					Kids-Gaming</a></strong></div>
+					Kids-Gaming</a>
+					</strong>
+					</div>
 						<nav>
 							<a href="#/feed">Feed</a>
 							<a href="#/profile">Perfil</a>
@@ -75,16 +76,16 @@ async function viewFeed(){
   let out = `<div class="card-post"><h2>POSTs</h2>`;
  feed.forEach(p=>{
     out += `
+      <div class="card">
     <div class="feed-item">
 	  <br>
-      <div>
         <h3>${p.title}</h3>
         <p>${p.text}</p>
-		</div>
 		<br>
       <img class="thumb" loading="lazy"  width="80%"  src="${p.img}">
 	  <br>
         <a class="btn" href="${p.url}">Abrir</a>
+		</div>
       </div>
 	  `;
   });
