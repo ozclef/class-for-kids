@@ -9,30 +9,26 @@ $bg: #0f172a; $card:#0b1220; $accent:#3b82f6; $muted:#94a3b8; $glass: rgba(255,2
     :root {  
 	/*VERDE AZUL BLANCO */
 		--bg: linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%);  
-		
+		 /*
+
+  --bg: #161c25;
 		/*AMARILLO DORADO!	*/	
 		--card: linear-gradient(90deg, #ffd200 0%, #f7971e 100%);    
 		   --accent: #6ce6b6;  
+		/*
 		   --muted: #9aa0a6;   
-		
-/*verde brondo */
-		
-		--card2: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
-*//*
-		  }
-
-
-
-*/ /*
-:root {
-  --bg: #161c25;
-	
-	--text:white;
   --card:#121621;
   --accent:#fdfdff;
+	*/ 
+		
+/*verde brondo */		
+		--card2: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+		  */
+	
+	--text:white;
 	/*
-	--card:#9aa3c2;
-  --accent2:#f7daea;
+	--card4:#9aa3c2;
+  --accent4:#f7daea;
 	*/
   /*
 	gray  #3D3D3D
@@ -65,8 +61,7 @@ $bg: #0f172a; $card:#0b1220; $accent:#3b82f6; $muted:#94a3b8; $glass: rgba(255,2
 		color: #eaf7f0;   
 		min-width:100vh;
 /*
-	}
-body{
+	body{
 	margin:0;background:var(--bg);
 	 color:var(--text);transition:.25s	 
 */
@@ -76,7 +71,7 @@ header{
   display:flex;
 	justify-content:space-between;
   padding:16px;align-items:center;
-  background:var(--card);
+  background:var(--card2);
 	position:sticky;
 	top:0;z-index:10
 }
@@ -85,7 +80,8 @@ header{
 nav a{
   margin-left:12px;	
 	text-decoration:none;
-	/*color:var(--muted);*/ color:white;
+	/*color:var(--muted);*/ 
+	color:white;
 }
 .btn{
   background:var(--accent);
@@ -95,8 +91,9 @@ nav a{
 	text-decoration:none;
 }
 .container{
-	/*max-width:1100px;*/
-		   margin:2px;padding:16px;}
+	max-width:100vh;
+	margin:2px;
+	padding:16px;}
 
 
 	    header {     
@@ -112,8 +109,9 @@ nav a{
 			
 		/* === HEADER CON LINEA RGB === * /
 header {*/
+			/*  */		
 			
-  background: var(--card);*/		
+  background: var(--card2);
   box-shadow: 0 0 12px rgba(255,255,255,0.05);
   border-bottom: 2px solid transparent;
   border-image: linear-gradient(
@@ -137,19 +135,20 @@ nav a {      margin-left: 16px;
         .layout { 
 			display: grid;  
 			grid-template-columns: 220px 1fr 220px;
-				 gap: 18px;      padding: 50px 24px 24px;  
-				 box-shadow: 0 0 12px rgba(255,255,255,0.05);
-  border-bottom: 2px solid transparent;
-  border-image: linear-gradient(
-    90deg,
-    var(--accent1),
-    var(--accent2),
-    var(--accent3)
-  ) 1;
-  }
+			gap: 18px; 
+			padding: 50px 24px 24px;  
+			box-shadow: 0 0 12px rgba(255,255,255,0.05);
+			border-bottom: 2px solid transparent;
+			border-image: linear-gradient(
+				90deg,
+				var(--accent1),
+				var(--accent2),
+				var(--accent3)
+			) 1;
+		}
 
-main {	width:100%; 
-	  background: var(--bg);  
+main {	max-width:720px; 
+	  background: var(--card2);  
 	  box-shadow: 0 0 12px rgba(255,255,255,0.05);
   border-bottom: 2px solid transparent;
   border-image: linear-gradient(
@@ -166,8 +165,7 @@ main {	width:100%;
 
     
     .perfil {      background: var(--card);  
-			 border-radius: 12px;      overflow: hidden;  
-			
+			 border-radius: 12px;     /* overflow: hidden;  */
 			  box-shadow: 0 0 12px rgba(255,255,255,0.05);
   border-bottom: 2px solid transparent;
   border-image: linear-gradient(
@@ -180,7 +178,7 @@ main {	width:100%;
 
 
     .portada {      height: 180px;      
-			  background: url('/Screenshot_7-4-2026_64216_github.com.jpeg') center/cover;
+			  background: url('IMG_20250805_111647_129 alex pizarron.jpg') center/cover;
 
 			    box-shadow: 0 0 12px rgba(255,255,255,0.05);
   border-bottom: 2px solid transparent;
@@ -190,24 +188,19 @@ main {	width:100%;
     var(--accent2),
     var(--accent3)
   ) 1;
-
-
 			  /*
-Screenshot_7-4-2026_64229_github.com.jpeg
-			  
+Screenshot_7-4-2026_64229_github.com.jpeg			  
 			  //  background: url('https://avatars.githubusercontent.com/u/212662790?v=4') center/cover; 
 			  */
 			  position: relative;    }
-
 
     .foto-perfil {      position: absolute;      bottom: -40px;    
 				  left: 24px;  
 				  width: 120px;      height: 120px;  
 				  border-radius: 50%;  
-				  border: 4px solid var(--card); 
+				  border: 4px solid var(--card2); 
 				  /*background: url('https://i.imgur.com/1X1X1X1.jpg') center/cover;*/  
-				 /* background: url('/img/os traje negro perfo.jpg') center/cover;
-*/
+				  background: url('lobo-pink-getziman.png') center/cover;
 				  
 				    box-shadow: 0 0 12px rgba(255,255,255,0.05);
   border-bottom: 2px solid transparent;
@@ -229,14 +222,7 @@ Screenshot_7-4-2026_64229_github.com.jpeg
 		border-radius: 8px;
 		font-size: 14px;    }
 
-
-
       a {  color:white;      }
-
-
-
-
-
 
 		 .profile-pic{
   width:150px;
@@ -280,14 +266,18 @@ Screenshot_7-4-2026_64229_github.com.jpeg
   ) 1;
 
 }
-/**/
 .feed-item{
+/*
   display:flex;
+*/
 	gap:12px;
 	padding:10px 0;
   border-bottom:1px solid rgba(255,255,255,.05)
 }
-.thumb{width:120px;height:80px;object-fit:cover;border-radius:8px}
+.thumb{width:320px;
+	   height:80px;
+	   object-fit:cover;
+	   border-radius:8px}
 
 	  
     @media (max-width: 768px) {
