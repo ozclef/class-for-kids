@@ -76,12 +76,15 @@ async function viewFeed(){
  feed.forEach(p=>{
     out += `
     <div class="feed-item">
-      <img class="thumb" loading="lazy"  width="90%"  src="${p.img}">
+	  <br>
       <div>
         <h3>${p.title}</h3>
         <p>${p.text}</p>
-        <a class="btn" href="${p.url}">Abrir</a>
 		</div>
+		<br>
+      <img class="thumb" loading="lazy"  width="80%"  src="${p.img}">
+	  <br>
+        <a class="btn" href="${p.url}">Abrir</a>
       </div>
 	  `;
   });
