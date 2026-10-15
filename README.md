@@ -2,16 +2,24 @@
 
 **Proyecto académico-docente desarrollado por Oscar Cruz Díaz.**
 
-
-
-
-
 ----
 
 2026... 
 
-<img width="1296" height="1594" alt="image" src="https://github.com/user-attachments/assets/9ab03653-5e8a-40a1-92c7-886bf819cba0" />
+octubre
 
+<img width="912" height="1124" alt="image" src="https://github.com/user-attachments/assets/2605295a-7fc4-458d-a078-f92903e28a9b" />
+
+HE Tardado, pero yo prometí a los alumnos , un URL donde quede en un sólo CLICK,
+todo lo que se vivió en 5 semanas de sólo unos pocos cursos de verano.
+
+YO YA no pude hacer update game de Gdevelop donde se puede jugar en index.html 
+¿Porqué así? pues. sin instalar un juego como roblox , para Consolas , XBOX \ PS4,
+mobiles. PC's bueno cualquier device que tenga browser... 
+
+ESO ERA MI IDEA: pero como buen desarrollador, 
+ALGO CON TANTA DEDICACIÓN , no se crea en un día, o un año .
+se necesitan manos como esos alumnos que trabajarone n equipo
 
 
 ----
